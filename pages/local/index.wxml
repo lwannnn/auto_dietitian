@@ -1,2 +1,9 @@
 <!--pages/local/index.wxml-->
-<text>pages/local/index.wxml</text>
+<view class="title">
+  <view class="title_container" style="font-weight:bold">首页</view>
+  <view class="title_container">收藏</view>
+  <view class="title_container">我的</view>
+</view>
+<view class="control-btn refresh-btn" >
+    <image src="../../assets/add.png" class="me-btn-content"></image>
+  </view>
