@@ -18,6 +18,24 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+      
+    },
+    {
+      "pagePath": "pages/local/index",
+      "text": "社区"
+      
+    },
+    {
+      "pagePath": "pages/me/index",
+      "text": "我的"
+     
+    }]
+    },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
