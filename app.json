@@ -2,7 +2,14 @@
   "pages":[
     "pages/index/index",
     "pages/local/index",
-    "pages/me/index"
+    "pages/local/me",
+    "pages/me/index",
+    "pages/login/index", 
+    "pages/register/index", 
+    "pages/search/index", 
+    "pages/private/index",
+    "pages/recipes/index"
+    
     
   ],
   "window":{
