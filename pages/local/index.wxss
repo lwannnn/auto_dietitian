@@ -55,7 +55,7 @@ page{
   width:80%;
   margin-left:10%;
   margin-top:5%;
-  height:400px;
+  height:380px;
   background-color:white;
 }
 .detail-btn
@@ -64,5 +64,5 @@ page{
   color:#FB7500;
   border: 1px solid #FB7500; 
   float:right;
-  width:40%;
+ 
 }
