@@ -1,2 +1,49 @@
 <!--pages/local/index.wxml-->
-<text>pages/local/index.wxml</text>
+<view class="title">
+  <view class="title_container" style="font-weight:bold">首页</view>
+  <view class="title_container">收藏</view>
+  <view class="title_container">我的</view>
+</view>
+<view>
+  <view class="menu_container">
+    <image src="../../assets/salad.png" mode="widthFix" style="width:100%"></image>
+    <view style="font-weight:bold;font-size:18px;text-align:center;">蔬菜沙拉</view>
+    <view style="font-size:11px;margin-top:3%">
+      制作方式：
+      这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样
+      ………
+    </view>
+    <view style="display:flex;margin-top:8%">
+      <image src="../../assets/love.png" mode="widthFix" style="width:10%"></image>
+      <text>830 </text>
+      <image src="../../assets/time.png" mode="widthFix" style="width:10%"></image>
+      <text> 39min</text>
+    </view>
+    <view style="display:flex;margin-top:10%">
+      <text style="color:#4BB000;font-weight:bold;">蔬菜小林</text>
+      <button class="detail-btn">查看详情</button>
+    </view>
+  </view>
+  <view class="menu_container">
+    <image src="../../assets/salad.png" mode="widthFix" style="width:100%"></image>
+    <view style="font-weight:bold;font-size:18px;text-align:center;">蔬菜沙拉</view>
+    <view style="font-size:11px;margin-top:3%">
+      制作方式：
+      这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样
+      ………
+    </view>
+    <view style="display:flex;margin-top:8%">
+      <image src="../../assets/love.png" mode="widthFix" style="width:10%"></image>
+      <text>830 </text>
+      <image src="../../assets/time.png" mode="widthFix" style="width:10%"></image>
+      <text> 39min</text>
+    </view>
+    <view style="display:flex;margin-top:10%">
+      <text style="color:#4BB000;font-weight:bold;">蔬菜小林</text>
+      <button class="detail-btn">查看详情</button>
+    </view>
+  </view>
+</view>
+<view class="control-btn refresh-btn">
+  <image src="../../assets/add.png" class="me-btn-content"></image>
+</view>
