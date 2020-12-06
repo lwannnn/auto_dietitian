@@ -1,1 +1,33 @@
 /* pages/login/index.wxss */
+.img{
+  display: flex;
+  justify-content: center;
+}
+
+.img1{
+  width: 90%;
+  height: 350px;
+}
+
+.Btn { 
+  width: 90%; 
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-top: 15px; 
+  border-radius: 10px;
+ }
+
+ .loginBtn{
+  background-color: #4267B1;
+ }
+
+ .registerBtn{
+   background-color: #2D61D3;
+ }
+ .back{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px; 
+   color: #2D61D3;
+ }

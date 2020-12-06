@@ -1,0 +1,5 @@
+<!--pages/login/register.wxml-->
+<view class="big">
+  <view class="registertext">注册</view>
+  <view><image src="img/Avatar.png" class="headimg"/></view>
+</view>

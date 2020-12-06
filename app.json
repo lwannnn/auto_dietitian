@@ -5,6 +5,8 @@
     "pages/local/me",
     "pages/me/index",
     "pages/login/index", 
+    "pages/login/login",
+    "pages/login/register",
     "pages/register/index", 
     "pages/search/index", 
     "pages/private/index",
