@@ -2,4 +2,26 @@
 <view class="big">
   <view class="registertext">注册</view>
   <view><image src="img/Avatar.png" class="headimg"/></view>
+  <view class="inputView logininput">
+    <labal class="loginlab">姓名*：</labal>
+    <input class="inputName" placeholder="姓名"/>
+  </view>
+  <view class="inputView">
+    <label class="loginlab">密码*：</label>
+    <input class="inputName" placeholder="密码"/>
+  </view>
+  <view class="inputView">
+    <label class="loginlab">手机号*：</label>
+    <input class="inputPassword" placeholder="手机号"/>
+  </view>
+  <view class="inputView">
+    <label class="loginlab">邀请码：</label>
+    <input class="inputPassword" placeholder="邀请码"/>
+  </view>
+  <view>
+    <switch class='switch-view' checked="{{switch1Checked}}" bindchange="switch1Change" type='switch'/>
+    <view>我已经接受了</view>
+    <view class="doc" bindtap="gotoDocumentPage">《条款》和《条件》</view>
+  </view>
+  <button class="Btn registerBtn">注册</button>
 </view>

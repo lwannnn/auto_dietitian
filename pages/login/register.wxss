@@ -4,9 +4,55 @@
 }
 .registertext{
   font-size: 30px;
+  margin-bottom: 25px;
 }
 
 .headimg{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
+
+.logininput{
+  margin-top: 10px;  
+}
+
+.inputView {
+  line-height: 45px; 
+  border-radius:20px;
+  margin-bottom: 5px;
+ }
+
+ .loginlab{
+  margin: 15px 15px 15px 10px; 
+  color: #545454; 
+  font-size: 14px;
+ }
+
+ .inputName,.inputPassword{
+  flex: block; 
+  float: right; 
+  text-align: right;
+  margin-top: 12px;
+  margin-right: 22px;
+  color: #cccccc; 
+  font-size: 14px;
+ }
+
+ .switch-view{
+   flex: block;
+   float: right;
+ }
+
+ .doc{
+   color: #2D61D3;
+ }
+
+ .Btn { 
+  width: 90%; 
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-top: 15px; 
+  border-radius: 10px;
+  background-color: #2D61D3;
+ }

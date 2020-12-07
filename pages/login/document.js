@@ -1,4 +1,4 @@
-// pages/login/register.js
+// pages/login/document.js
 Page({
 
   /**
@@ -15,11 +15,6 @@ Page({
 
   },
 
-  gotoDocumentPage: function (options) {
-    wx.navigateTo({
-      url: '/pages/login/document',//要跳转到的页面路径
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
