@@ -1,0 +1,12 @@
+/* pages/login/register.wxss */
+.big{
+  margin: 20px;
+}
+.registertext{
+  font-size: 30px;
+}
+
+.headimg{
+  width: 100px;
+  height: 100px;
+}

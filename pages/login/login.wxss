@@ -1,0 +1,64 @@
+/* pages/login/login.wxss */
+.top{
+  margin: 20px 20px 0px 20px;
+}
+
+.welcome{
+  font-size: 30px;
+}
+
+.Register{
+  display: block;
+  float: right;
+  line-height: 30px;
+  margin-right: 10px;
+  color: #2D61D3;
+}
+
+.logininput{
+  margin-top: 50px;  
+}
+
+.inputView {
+  line-height: 45px; 
+  border-radius:20px;
+  margin-bottom: 15px;
+  border:1px solid #999999;
+ }
+
+ .loginlab{
+  margin: 15px 15px 15px 10px; 
+  color: #545454; 
+  font-size: 14px;
+ }
+
+ .inputNumber,.inputPassword{
+  flex: block; 
+  float: right; 
+  text-align: right; 
+  margin-right: 22px; 
+  margin-top: 11px;
+  color: #cccccc; 
+  font-size: 14px
+ }
+
+ .Btn { 
+   width: 90%; 
+   font-size: 14px;
+   font-weight: 500;
+   color: white;
+   margin-top: 20px; 
+   border-radius: 10px;
+  }
+ 
+  .loginBtn{
+   background-color: #4267B1;
+  }
+  
+  .forget{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    margin-top: 10px;
+    color: #969696;
+  }

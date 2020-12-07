@@ -1,2 +1,7 @@
 <!--pages/login/index.wxml-->
-<text>pages/login/index.wxml</text>
+<view class="img">
+  <image src="img/onboarding.png" class="img1"></image>
+</view>
+<button class="Btn loginBtn" bindtap="gotoLoginPage">从已有账号登录</button>
+<button class="Btn registerBtn" bindtap="gotoRegisterPage">注册</button>
+<text class="back" bindtap="gotomePage">退出</text>
