@@ -1,4 +1,4 @@
-// pages/local/index.js
+// pages/local/detail.js
 Page({
 
   /**
@@ -28,21 +28,7 @@ Page({
   onShow: function () {
 
   },
-  goLocal:function(){
-    wx.navigateTo({
-      url: '../local/index',
-    })
-  },
-  goMe:function(){
-    wx.navigateTo({
-      url: '../local/me',
-    })
-  },
-  goDetail:function(){
-    wx.navigateTo({
-      url: '../local/detail',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */
