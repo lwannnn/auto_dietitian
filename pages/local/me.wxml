@@ -1,2 +1,5 @@
-<!--pages/local/me.wxml-->
-<text>pages/local/me.wxml</text>
+<view class="title">
+  <view class="title_container" bindtap="goLocal">首页</view>
+  <view class="title_container">收藏</view>
+  <view class="title_container"style="font-weight:bold" bindtap="goMe">我的</view>
+</view>

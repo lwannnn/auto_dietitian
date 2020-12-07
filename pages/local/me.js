@@ -15,6 +15,16 @@ Page({
 
   },
 
+  goLocal:function(){
+    wx.navigateTo({
+      url: '../local/index',
+    })
+  },
+  goMe:function(){
+    wx.navigateTo({
+      url: '../local/me',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,0 +1,12 @@
+/* pages/local/detail.wxss */
+page{
+  background-color:#EEF2F5
+}
+.menu_container
+{
+  width:90%;
+  margin-left:5%;
+  margin-top:5%;
+  height:800px;
+  background-color:white;
+}
