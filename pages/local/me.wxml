@@ -3,3 +3,8 @@
   <view class="title_container">收藏</view>
   <view class="title_container"style="font-weight:bold" bindtap="goMe">我的</view>
 </view>
+<view>
+  <view class="card">
+    
+  </view>
+</view>

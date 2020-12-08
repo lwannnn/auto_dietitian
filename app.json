@@ -4,6 +4,7 @@
     "pages/local/index",
     "pages/local/me",
     "pages/local/detail",
+    "pages/local/write_menu",
     "pages/me/index",
     "pages/login/index", 
     "pages/login/login",

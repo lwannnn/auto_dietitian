@@ -45,5 +45,5 @@
   </view>
 </view>
 <view class="control-btn refresh-btn">
-  <image src="../../assets/add.png" class="me-btn-content"></image>
+  <image src="../../assets/add.png" class="me-btn-content" bindtap="toWrite"></image>
 </view>

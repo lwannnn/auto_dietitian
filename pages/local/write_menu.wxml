@@ -1,0 +1,11 @@
+<!--pages/local/write_menu.wxml-->
+<view class="edit_container">
+  <text>发布一条新菜单</text>
+  <input type="text" value="{{menu_name}}"placeholder="菜名"  style="width:40%"bindinput="getName"/>
+  制作时间：<input type="text" value="{{menu_time}}"placeholder="   min" bindinput="getTime"/>
+  原材料：<input type="text" value="{{menu_region}}" bindinput="getRegion"/>
+  好处：<input type="text" value="{{menu_privilege}}" bindinput="getPrivilege"/>
+  <textarea value="{{menu_step}}"placeholder="制作步骤"bindinput="getStep" class="step_container">
+  </textarea>
+</view>
+<button bindtap="submit_menu">发布</button>

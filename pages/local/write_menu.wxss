@@ -1,0 +1,35 @@
+/* pages/local/write_menu.wxss */
+page{
+  background-color:#EEF2F5
+}
+.edit_container
+{
+  width:80vw;
+  height:120vw;
+  margin:10vw 8vw;
+  background-color: white;
+  padding:3%;
+}
+input{
+  border-color: #BAC1C9;
+border-style: solid;
+border-top-width: 0px;
+ border-right-width: 0px;
+border-bottom-width: 1px;
+ border-left-width: 0px
+}
+.step_container
+{
+  
+  width:90%;
+  margin-top:5vw;
+  margin-left:5%;
+  height:50vw;
+  border:2px solid #BAC1C9;
+  border-radius:5%;
+}
+button{
+  background-color: #F93C64;
+  border-radius:20px;
+  color:white
+}
