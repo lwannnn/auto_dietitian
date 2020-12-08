@@ -1,7 +1,7 @@
 <view class="title">
   <view class="title_container" bindtap="goLocal">首页</view>
-  <view class="title_container" bindtap="goCollect">收藏</view>
-  <view class="title_container" style="font-weight:bold" bindtap="goMe">我的</view>
+  <view class="title_container"style="font-weight:bold" bindtap="goCollect">收藏</view>
+  <view class="title_container"  bindtap="goMe">我的</view>
 </view>
 <view class="card_container">
   <view class="card">

@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/local/index",
+    "pages/local/collect",
     "pages/local/me",
     "pages/local/detail",
     "pages/local/write_menu",
@@ -20,7 +21,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "掌上营养师",
     "navigationBarTextStyle":"black"
   },
   

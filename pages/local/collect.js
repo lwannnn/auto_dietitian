@@ -1,4 +1,4 @@
-// pages/local/index.js
+// pages/local/collect.js
 Page({
 
   /**
@@ -15,6 +15,21 @@ Page({
 
   },
 
+  goLocal:function(){
+    wx.reLaunch({
+      url: '../local/index',
+    })
+  },
+  goMe:function(){
+    wx.reLaunch({
+      url: '../local/me',
+    })
+  },
+  goCollect:  function(){
+    wx.reLaunch({
+      url: '../local/collect',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -28,32 +43,7 @@ Page({
   onShow: function () {
 
   },
-  goLocal:function(){
-    wx.navigateTo({
-      url: '../local/index',
-    })
-  },
-  goMe:function(){
-    wx.navigateTo({
-      url: '../local/me',
-    })
-  },
-  goDetail:function(){
-    wx.reLaunch({
-      url: '../local/detail',
-    })
-  },
-  toWrite:function()
-  {
-    wx.reLaunch({
-      url: '../local/write_menu',
-    })
-  },
-  goCollect:  function(){
-    wx.reLaunch({
-      url: '../local/collect',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面隐藏
    */

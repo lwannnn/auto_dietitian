@@ -15,14 +15,19 @@ Page({
 
   },
 
-  goLocal:function(){
-    wx.navigateTo({
-      url: '../local/index',
+  goLocal: function () {
+    wx.reLaunch({
+      url: '../local/index'
     })
   },
-  goMe:function(){
-    wx.navigateTo({
+  goMe: function () {
+    wx.reLaunch({
       url: '../local/me',
+    })
+  },
+  goCollect: function () {
+    wx.reLaunch({
+      url: '../local/collect',
     })
   },
   /**
