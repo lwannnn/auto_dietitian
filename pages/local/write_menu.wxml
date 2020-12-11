@@ -1,4 +1,5 @@
 <!--pages/local/write_menu.wxml-->
+<text class="goBack" bindtap="goBack">返回</text>
 <view class="edit_container">
   <text>发布一条新菜单</text>
   <input type="text" value="{{menu_name}}"placeholder="菜名"  style="width:40%"bindinput="getName"/>

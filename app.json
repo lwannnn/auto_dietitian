@@ -1,5 +1,9 @@
 {
   "pages":[
+    "pages/login/index", 
+    "pages/login/login",
+    "pages/login/register",
+    "pages/login/document",
     "pages/index/index",
     "pages/local/index",
     "pages/local/collect",
@@ -7,10 +11,6 @@
     "pages/local/detail",
     "pages/local/write_menu",
     "pages/me/index",
-    "pages/login/index", 
-    "pages/login/login",
-    "pages/login/register",
-    "pages/login/document",
     "pages/register/index", 
     "pages/search/index", 
     "pages/private/index",

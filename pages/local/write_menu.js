@@ -23,6 +23,11 @@ Page({
       menu_name: e.detail.value
     })
   },
+  goBack:function(){
+    wx.reLaunch({
+      url: '../local/index',
+    })
+  },
   getTime: function (e) {
     this.setData({
       menu_time: e.detail.value
@@ -48,8 +53,8 @@ Page({
       title: '发布成功！',
     })
     setTimeout(() => {
-      wx.navigateBack({
-        delta: 0,
+      wx.reLaunch({
+        url: '../local/index',
       })
     }, 1000)
   },

@@ -2,11 +2,14 @@
 page{
   background-color:#EEF2F5
 }
+.goBack{
+  color:#2D61D3
+}
 .edit_container
 {
   width:80vw;
   height:120vw;
-  margin:10vw 8vw;
+  margin:8vw 8vw;
   background-color: white;
   padding:3%;
 }
