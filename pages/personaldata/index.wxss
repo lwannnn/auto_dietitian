@@ -1,1 +1,39 @@
 /* pages/personaldata/index.wxss */
+.contain{
+  margin: 20px 20px 0px 20px;
+}
+
+.headclass{
+  display: block;
+  float: left;
+}
+
+.headimg{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid;
+}
+
+.basicdata{
+  display: block;
+  float: right;
+}
+
+.datatitle{
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.projecttext{
+  display: block;
+  float: left;
+}
+
+.datatext{
+  display: block;
+  float: right;
+  text-align: right;
+  margin-left: 60px;
+}

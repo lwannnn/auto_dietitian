@@ -15,6 +15,12 @@ Page({
 
   },
 
+  gotoPersonalPage: function (options) {
+    wx.navigateTo({
+      url: '/pages/personaldata/index',//要跳转到的页面路径
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

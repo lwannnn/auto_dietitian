@@ -1,3 +1,2 @@
 <!--pages/me/index.wxml-->
-<text>pages/me/index.wxml</text>
-<button>个人数据</button>
+<button bindtap="gotoPersonalPage">个人数据</button>
