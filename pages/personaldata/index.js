@@ -1,4 +1,4 @@
-// pages/login/index.js
+// pages/personaldata/index.js
 Page({
 
   /**
@@ -15,22 +15,6 @@ Page({
 
   },
 
-  gotoLoginPage: function (options) {
-    wx.navigateTo({
-      url: '/pages/login/login',//要跳转到的页面路径
-    })
-  },
-  gotomePage: function (options) {
-    wx.switchTab({
-    url: '/pages/index/index', //要跳转到的页面路径
-    })
-  },
-
-  gotoRegisterPage: function (options) {
-    wx.navigateTo({
-      url: '/pages/login/register',//要跳转到的页面路径
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
