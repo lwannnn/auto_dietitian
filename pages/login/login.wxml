@@ -12,5 +12,5 @@
   <input class="inputPassword" placeholder="密码"/>
 </view>
 </view>
-<button class="Btn loginBtn">登录</button>
+<button class="Btn loginBtn" bindtap="gotoIndexPage">登录</button>
 <text class="forget">忘记密码？</text>
