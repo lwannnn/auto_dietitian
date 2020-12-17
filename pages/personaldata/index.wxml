@@ -17,4 +17,25 @@
       <view class="basictext">7天</view>
     </view>
   </view>
+
+  <view class="linechart">
+    <view>血糖</view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
+  </view>
+
+  <view class="foodlist">
+    <view>今日饮食记录</view>
+    <view>早餐</view>
+    <button 
+            wx:for="{{riderCommentList}}" 
+            wx:for-item="item" 
+            wx:key="item.index"  
+            bindtap="checkboxChange" 
+            data-value="{{item.value}}" 
+            data-index="{{index}}"  
+            checked="{{item.selected}}"
+            class="btn {{item.selected ? 'btn-selected':''}}" >
+            {{item.title}}
+    </button>
+  </view>
 </view>

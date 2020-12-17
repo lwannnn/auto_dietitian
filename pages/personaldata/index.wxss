@@ -37,3 +37,28 @@
   text-align: right;
   margin-left: 60px;
 }
+
+.linechart{
+  display: block;
+  clear: both;
+}
+
+.canvas {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.btn{
+  width: 80px;
+  height: 20px;
+  font-size: 14px;
+  border: 1px solid #2D61D3;
+  padding: 0;
+  border-radius: 4px;
+  margin-top: 5px;
+  text-align: center;
+}
+.btn-selected{
+  background-color: #2D61D3;
+  color: #ffffff;
+}
