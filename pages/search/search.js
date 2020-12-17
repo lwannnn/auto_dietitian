@@ -1,4 +1,4 @@
-// pages/search/index.js
+// pages/search/search.js
 Page({
 
   /**
@@ -7,12 +7,18 @@ Page({
   data: {
 
   },
- // 跳转到搜索页面
- search: function () {
+// 取消搜索,返回主页面
+hideInput: function () {
   wx.navigateTo({
-    url: '../search/search'
-  })
-},
+  //跳转，返回主页面路径
+        url: '../log1/log1'   
+      })
+    },
+    search: function () {
+      wx.navigateTo({
+        url: '../search/hamburger'
+      })
+    },
   /**
    * 生命周期函数--监听页面加载
    */

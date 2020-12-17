@@ -1,4 +1,4 @@
-// pages/search/index.js
+// pages/search/niurouhanbao.js
 Page({
 
   /**
@@ -7,12 +7,7 @@ Page({
   data: {
 
   },
- // 跳转到搜索页面
- search: function () {
-  wx.navigateTo({
-    url: '../search/search'
-  })
-},
+
   /**
    * 生命周期函数--监听页面加载
    */

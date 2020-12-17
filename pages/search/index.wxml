@@ -1,2 +1,10 @@
 <!--pages/search/index.wxml-->
-<text>pages/search/index.wxml</text>
+<view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='16' type='search'></icon>
+        <input class="sousuo" disabled placeholder="搜索" bindtap='search'/>
+      </view>
+    </view>
+  </view>
+  <image src="image/photo1.png" class="img"></image>

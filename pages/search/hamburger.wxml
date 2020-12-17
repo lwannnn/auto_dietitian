@@ -1,0 +1,4 @@
+<!--pages/search/hamburger.wxml-->
+<image src="image/hb1.png" class="img" bindtap='search'></image>
+<image src="image/hb2.png" class="img"></image>
+<image src="image/hb3.png" class="img"></image>
