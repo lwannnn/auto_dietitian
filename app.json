@@ -15,7 +15,9 @@
     "pages/search/index", 
     "pages/private/index",
     "pages/recipes/index",
-    "pages/personaldata/index"
+    "pages/personaldata/index",
+    "pages/personaldata/editbloodsugar",
+    "pages/personaldata/editfoodlist"
     
     
   ],

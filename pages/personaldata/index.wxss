@@ -41,6 +41,11 @@
 .linechart{
   display: block;
   clear: both;
+  padding-top: 30px;
+}
+
+.project{
+  margin-bottom: 15px;
 }
 
 .canvas {
@@ -49,8 +54,8 @@
 }
 
 .btn{
-  width: 80px;
-  height: 20px;
+  width: 150px;
+  height: 25px;
   font-size: 14px;
   border: 1px solid #2D61D3;
   padding: 0;
@@ -61,4 +66,15 @@
 .btn-selected{
   background-color: #2D61D3;
   color: #ffffff;
+}
+
+.foodtitle{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.editbtn{
+  width: 67px;
+  height: 24px;
+  float: right;
 }

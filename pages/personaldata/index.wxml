@@ -19,13 +19,19 @@
   </view>
 
   <view class="linechart">
-    <view>血糖</view>
+    <view class="project">
+      <text class="foodtitle">血糖</text>
+      <image class="editbtn" src="img/editbutton.png"></image>
+    </view>
     <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
   </view>
 
   <view class="foodlist">
-    <view>今日饮食记录</view>
-    <view>早餐</view>
+    <view class="project">
+      <text class="foodtitle">今日饮食记录</text>
+      <image class="editbtn" src="img/editbutton.png"></image>
+    </view>
+    <view class="breakfast">早餐</view>
     <button 
             wx:for="{{riderCommentList}}" 
             wx:for-item="item" 
