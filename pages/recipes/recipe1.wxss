@@ -1,0 +1,7 @@
+/* pages/recipes/recipe1.wxss */
+.img{
+  width: 300px;
+  height:450px;
+  margin-left: 40rpx;
+  margin-top: 10px;
+}

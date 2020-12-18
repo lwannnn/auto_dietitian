@@ -1,4 +1,4 @@
-// pages/recipes/recipes.js
+// pages/recipes/recipe1.js
 Page({
 
   /**

@@ -1,40 +1,13 @@
-// pages/recipes/index.js
+// pages/recipes/recipe3.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    items: [
-      { name: '1', value: '1',imageUrl:'img/radio1.png' },
-      { name: '2', value: '2', checked: 'true',imageUrl:'img/radio2.png' },
-      { name: '3', value: '3',imageUrl:'img/radio3.png' },
-    ],
-    addValue:'2'
+
   },
-  radioChange: function (e) {
-    this.setData({
-      addValue:e.detail.value
-    })
-  },
-search: function () {
-  console.log(this.data.addValue)
-  if(this.data.addValue==='1')
-  {
-    wx.navigateTo({
-      url: '../recipes/recipe1'
-    })
-  }
-  if(this.data.addValue==='2')
-  {
-    wx.navigateTo({
-      url: '../recipes/recipe2'
-    })
-  }
-  if(this.data.addValue==='3')
-  {
-    wx.navigateTo({
-      url: '../recipes/recipe3'
-    })
-  }
-      
-    },
+
   /**
    * 生命周期函数--监听页面加载
    */
