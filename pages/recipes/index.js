@@ -1,13 +1,20 @@
 // pages/recipes/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    items: [
+      { name: 'USA', value: '美国',imageUrl:'img/radio1.png' },
+      { name: 'CHN', value: '中国', checked: 'true',imageUrl:'img/radio2.png' },
+      { name: 'BRA', value: '巴西',imageUrl:'img/radio3.png' },
+    ]
   },
-
+  radioChange: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+  },
+  search: function () {
+    wx.navigateTo({
+      url: '../search/hamburger'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
