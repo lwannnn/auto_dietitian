@@ -21,7 +21,7 @@
   <view class="linechart">
     <view class="project">
       <text class="foodtitle">血糖</text>
-      <image class="editbtn" src="img/editbutton.png"></image>
+      <image class="editbtn" src="img/editbutton.png" bindtap="gotoEditbloodPage"></image>
     </view>
     <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
   </view>
@@ -29,7 +29,7 @@
   <view class="foodlist">
     <view class="project">
       <text class="foodtitle">今日饮食记录</text>
-      <image class="editbtn" src="img/editbutton.png"></image>
+      <image class="editbtn" src="img/editbutton.png" bindtap="gotoEditlistPage"></image>
     </view>
     <view class="breakfast">早餐</view>
     <button 

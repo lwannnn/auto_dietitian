@@ -1,2 +1,60 @@
 <!--pages/personaldata/editfoodlist.wxml-->
-<text>pages/personaldata/editfoodlist.wxml</text>
+<view class="contain">
+    <view class="texttitle">早餐</view>
+  <view class="oversf orderBuy">
+  <view class="storeLists" wx:for="{{buyerList}}" wx:key="index">
+    <checkbox-group class='marLab'>
+      <label class="checkbox oneji" wx:for="{{item.category_item}}" wx:for-item='category_item' wx:key='index' wx:for-index="father_index" data-store_id="{{item.store_id}}" data-parent_id="{{father_index}}" data-category_item="{{category_item}}" bindtap="checkboxChange">
+        <checkbox class="imgCheackone" value="{{item.name}}" checked="{{category_item.checked}}" />
+        <text class="titles imgCheackone paddl">{{category_item.category_title}}</text>
+        <!-- 二级 -->
+        <checkbox-group>
+          <label class="checkbox twoJi" wx:for="{{category_item.goods_item}}" wx:for-item='goods_item' wx:key='key' wx:for-index="son_index" data-child_id="{{son_index}}" data-category_id="{{goods_item.category_id}}" data-store_id="{{goods_item.store_id}}" data-id="{{son_index}}"
+            catchtap='childChange'>
+            <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
+            <!-- <image class="dians" src="{{goods_item.goods.logo}}"></image> -->
+            <text class="titles overs">{{goods_item.goods.title}}</text>
+            <!-- <text>A供应商</text> -->
+            <view class="weis">
+              <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
+              <text> {{goods_item.unit_text}}</text>
+              <!--class="method over"-->
+            </view>
+          </label>
+        </checkbox-group>
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="database" wx:if='{{buyerListlength<1}}'>暂无数据~</view>
+</view>
+
+  <view class="blocks">
+    <view class="texttitle">午餐</view>
+    <button 
+            wx:for="{{LunchList}}" 
+            wx:for-item="item" 
+            wx:key="item.index"  
+            bindtap="checkboxChange2" 
+            data-value="{{item.value}}" 
+            data-index="{{index}}"  
+            checked="{{item.selected}}"
+            class="btn {{item.selected ? 'btn-selected':''}}" >
+            {{item.title}}
+    </button>
+  </view>
+
+  <view class="blocks">
+    <view class="texttitle">晚餐</view>
+    <button 
+            wx:for="{{SupperList}}" 
+            wx:for-item="item" 
+            wx:key="item.index"  
+            bindtap="checkboxChange3" 
+            data-value="{{item.value}}" 
+            data-index="{{index}}"  
+            checked="{{item.selected}}"
+            class="btn {{item.selected ? 'btn-selected':''}}" >
+            {{item.title}}
+    </button>
+  </view>
+</view>

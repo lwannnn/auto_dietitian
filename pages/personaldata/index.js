@@ -40,6 +40,17 @@ Page({
     }]
   },
 
+  gotoEditbloodPage: function (options) {
+    wx.navigateTo({
+      url: '/pages/personaldata/editbloodsugar',//要跳转到的页面路径
+    })
+  },
+  gotoEditlistPage: function (options) {
+    wx.navigateTo({
+      url: '/pages/personaldata/editfoodlist',//要跳转到的页面路径
+    })
+  },
+
   checkboxChange(e){
     console.log('checkboxChange e:',e);
     let string = "riderCommentList["+e.target.dataset.index+"].selected"
