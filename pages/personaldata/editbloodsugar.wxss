@@ -1,1 +1,44 @@
 /* pages/personaldata/editbloodsugar.wxss */
+.linkman .h1 {
+  background: #fff;
+  margin: 20rpx 0;
+  padding: 20rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+}
+
+.handle {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.deles {
+  background: #eee;
+  padding: 5rpx 20rpx;
+
+}
+.deletext{
+  width: 300px;
+  text-align: right;
+}
+switch {
+  transform: scale(0.7);
+}
+
+.person {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.person input {
+  width: 75%;
+}
+
+button {
+  background: #5280f4;
+  color: #fff;
+  width: 90%;
+  font-size: 34rpx;
+  bottom: 20rpx;
+  margin: 50rpx auto;
+}

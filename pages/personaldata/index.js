@@ -9,35 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    riderCommentList: [{
-      value: '麦片',
-      selected: false ,
-      title: '麦片'
-    },{
-      value: '白粥',
-      selected: false ,
-      title: '白粥'
-    },{
-      value: '面条',
-      selected: false ,
-      title: '面条'
-    },{
-      value: '米线',
-      selected: false ,
-      title: '米线'
-    },{
-      value: '面包',
-      selected: false ,
-      title: '面包'
-    },{
-      value: '馒头',
-      selected: false ,
-      title: '馒头'
-    },{
-      value: '包子',
-      selected: false ,
-      title: '包子'
-    }]
+
   },
 
   gotoEditbloodPage: function (options) {
@@ -49,16 +21,6 @@ Page({
     wx.navigateTo({
       url: '/pages/personaldata/editfoodlist',//要跳转到的页面路径
     })
-  },
-
-  checkboxChange(e){
-    console.log('checkboxChange e:',e);
-    let string = "riderCommentList["+e.target.dataset.index+"].selected"
-        this.setData({
-            [string]: !this.data.riderCommentList[e.target.dataset.index].selected
-        })
-        let detailValue = this.data.riderCommentList.filter(it => it.selected).map(it => it.value)
-        console.log('所有选中的值为：', detailValue)
   },
 
   /**
@@ -73,7 +35,6 @@ Page({
  
     //计算屏幕宽度比列
     windowW = this.data.imageWidth/375;
-    //console.log(windowW);
   },
 
   /**

@@ -26,6 +26,13 @@
   font-weight: 600;
 }
 
+.inputEdit {
+  display: inline-block;
+  border: 1px solid #eee;
+  width: 100rpx;
+  vertical-align: middle;
+}
+
 .projecttext{
   display: block;
   float: left;
@@ -77,4 +84,8 @@
   width: 67px;
   height: 24px;
   float: right;
+}
+
+.tips{
+  color: gray;
 }

@@ -1,2 +1,27 @@
 <!--pages/personaldata/editbloodsugar.wxml-->
-<text>pages/personaldata/editbloodsugar.wxml</text>
+<form bindsubmit="formSubmit">
+  <view>
+    <block wx:for="{{obj}}" wx:key='index'> </block>
+    <view>
+      <block wx:for="{{array}}" wx:key>
+        <view class="person">
+          <view class="deles" wx:if='{{index!=0}}'>
+            <view class="deletext" bindtap='delInput' data-idx='{{index}}'>删除↓</view>
+            <!-- {{item.txid}} -->
+          </view>
+          <view>
+            <text>日期</text>
+            <input name='username{{index}}' placeholder="请输入日期" data-idx='{{index}}' bindinput='getInputVal' value="{{item.username}}"></input>
+          </view>
+          <view>
+            <text>血糖值</text> 
+            <input type="text" name='position{{index}}' data-idx='{{index}}'  bindinput='getInputPosi' placeholder="请输入血糖值" value="{{item.positions}}"></input>
+          </view>
+        </view>
+
+      </block>
+    </view>
+          <button bindtap='addInput'>增加天数</button>
+  </view>
+  <button hover-class="none" formType="submit">确定</button>
+</form>

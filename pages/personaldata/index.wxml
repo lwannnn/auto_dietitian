@@ -12,8 +12,8 @@
       <view>坚持天数</view>
     </view>
     <view class="datatext">
-      <view class="basictext">180cm</view>
-      <view class="basictext">60kg</view>
+      <view class="basictext"><input class="inputEdit" value="180"></input>cm</view>
+      <view class="basictext"><input class="inputEdit" value="60"></input>kg</view>
       <view class="basictext">7天</view>
     </view>
   </view>
@@ -32,16 +32,10 @@
       <image class="editbtn" src="img/editbutton.png" bindtap="gotoEditlistPage"></image>
     </view>
     <view class="breakfast">早餐</view>
-    <button 
-            wx:for="{{riderCommentList}}" 
-            wx:for-item="item" 
-            wx:key="item.index"  
-            bindtap="checkboxChange" 
-            data-value="{{item.value}}" 
-            data-index="{{index}}"  
-            checked="{{item.selected}}"
-            class="btn {{item.selected ? 'btn-selected':''}}" >
-            {{item.title}}
-    </button>
+    <view class="tips">还没有记录噢！</view>
+    <view class="breakfast">午餐</view>
+    <view class="tips">还没有记录噢！</view>
+    <view class="breakfast">晚餐</view>
+    <view class="tips">还没有记录噢！</view>
   </view>
 </view>
