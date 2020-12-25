@@ -1,23 +1,30 @@
 <!--pages/personaldata/index.wxml-->
-<view class="contain">
-  <view class="headclass">
-    <view class="headimg"></view>
-    <view>我叫XXXXX</view>
-  </view>
-  <view class="basicdata">
-    <view class="datatitle">基本数据</view>
-    <view class="projecttext">
-      <view>身高</view>
-      <view>体重</view>
-      <view>坚持天数</view>
+  <view class="toppart">
+    <view class="headclass">
+      <view class="headimg"></view>
+      <view>我叫XXXXX</view>
     </view>
-    <view class="datatext">
-      <view class="basictext"><input class="inputEdit" value="180"></input>cm</view>
-      <view class="basictext"><input class="inputEdit" value="60"></input>kg</view>
-      <view class="basictext">7天</view>
+    <view class="basicdata">
+     <view class="datatitle">基本数据</view>
+      <view class="projecttext">
+        <view>身高</view>
+        <view>体重</view>
+        <view>坚持天数</view>
+      </view>
+      <view class="datatext">
+        <view>
+          <input class="inputEdit" value="{{stature}}" bindtap="setHeight"></input>
+          <text class="basictext">cm</text>
+        </view>
+        <view>
+          <input class="inputEdit" value="60"></input>
+          <text class="basictext">kg</text></view>
+        <view class="basictext">7天</view>
+      </view>
     </view>
   </view>
 
+  <view class="contain">
   <view class="linechart">
     <view class="project">
       <text class="foodtitle">血糖</text>
@@ -32,7 +39,7 @@
       <image class="editbtn" src="img/editbutton.png" bindtap="gotoEditlistPage"></image>
     </view>
     <view class="breakfast">早餐</view>
-    <view class="tips">还没有记录噢！</view>
+    <view class="tips" bindtap="displayFoodLists">还没有记录噢！</view>
     <view class="breakfast">午餐</view>
     <view class="tips">还没有记录噢！</view>
     <view class="breakfast">晚餐</view>
