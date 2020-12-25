@@ -1,46 +1,47 @@
 <!--pages/local/index.wxml-->
 <view class="title">
-  <view class="title_container" style="font-weight:bold"bindtap="goLocal">首页</view>
+  <view class="title_container" style="font-weight:bold" bindtap="goLocal">首页</view>
   <view class="title_container" bindtap="goCollect">收藏</view>
-  <view class="title_container"  bindtap="goMe">我的</view>
+  <view class="title_container" bindtap="goMe">我的</view>
 </view>
 <view>
   <view class="menu_container">
     <image src="../../assets/salad.png" mode="widthFix" style="width:100%"></image>
-    <view style="font-weight:bold;font-size:18px;text-align:center;">蔬菜沙拉</view>
-    <view style="font-size:11px;margin-top:3%">
+    <view style="font-weight:bold;font-size:16px;text-align:center;color:#697376">蔬菜沙拉</view>
+    <view style="font-size:9px;margin-top:3%;color:#697376">
       制作方式：
-      这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样
+      <view>这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样</view>
       ………
     </view>
-    <view style="display:flex;margin-top:8%">
-      <image src="../../assets/love.png" mode="widthFix" style="width:10%"></image>
-      <text>830 </text>
-      <image src="../../assets/time.png" mode="widthFix" style="width:10%"></image>
-      <text> 39min</text>
+    <view style="display:flex;margin-top:8%;color:#697376;font-size:12px">
+      <image src="../../assets/love.png" mode="widthFix" style="width:8%"></image>
+      <text style="margin:3px">830 </text>
+      <image src="../../assets/time.png" mode="widthFix" style="width:8%"></image>
+      <text style="margin:3px"> 39min</text>
     </view>
-    <view style="display:flex;margin-top:10%">
-      <text style="color:#4BB000;font-weight:bold;">蔬菜小林</text>
-      <button class="detail-btn" bindtap="goDetail">查看详情</button>
+    <view style="display:flex;margin-top:10%;font-size:12px;justify-content:space-around">
+      <text class="user_name" >蔬菜小林</text>
+      <button class="detail-btn" bindtap="goDetail" style="width:120px;height:35px;line-height:15px">查看详情</button>
     </view>
   </view>
   <view class="menu_container">
     <image src="../../assets/salad.png" mode="widthFix" style="width:100%"></image>
-    <view style="font-weight:bold;font-size:18px;text-align:center;">蔬菜沙拉</view>
-    <view style="font-size:11px;margin-top:3%">
+    <view style="font-weight:bold;font-size:16px;text-align:center;color:#697376">蔬菜沙拉</view>
+    <view style="font-size:9px;margin-top:3%;color:#697376">
       制作方式：
-      这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样
+      <view>这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样</view>
       ………
     </view>
-    <view style="display:flex;margin-top:8%">
-      <image src="../../assets/love.png" mode="widthFix" style="width:10%"></image>
-      <text>830 </text>
-      <image src="../../assets/time.png" mode="widthFix" style="width:10%"></image>
-      <text> 39min</text>
+    <view style="display:flex;margin-top:8%;color:#697376;font-size:12px">
+      <image src="../../assets/love.png" mode="widthFix" style="width:8%"></image>
+      <text style="margin:3px">830 </text>
+      <image src="../../assets/time.png" mode="widthFix" style="width:8%"></image>
+      <text  style="margin:3px"> 39min</text>
     </view>
-    <view style="display:flex;margin-top:10%">
-      <text style="color:#4BB000;font-weight:bold;">蔬菜小林</text>
-      <button class="detail-btn">查看详情</button>
+    <view style="display:flex;margin-top:10%;font-size:12px">
+      <text  class="user_name">蔬菜小林</text>
+      <button class="detail-btn" style="width:120px;height:35px;line-height:15px">查看详情</button>
+
     </view>
   </view>
 </view>

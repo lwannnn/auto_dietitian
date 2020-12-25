@@ -53,10 +53,11 @@ page{
 .menu_container
 {
   width:80%;
-  margin-left:10%;
+  margin-left:5%;
   margin-top:5%;
   height:380px;
   background-color:white;
+  padding:5%
 }
 .detail-btn
 {
@@ -64,5 +65,13 @@ page{
   color:#FB7500;
   border: 1px solid #FB7500; 
   float:right;
- 
+ text-align: center;
+ font-size:12px
+}
+.user_name
+{
+ color:#4BB000;
+ font-weight:bold;
+ margin-left:10%;
+ margin-top:5px;
 }
