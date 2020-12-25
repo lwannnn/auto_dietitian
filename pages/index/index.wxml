@@ -1,4 +1,29 @@
 <!--index.wxml-->
-<view class="container">
-这是首页s
+<view class="index">
+  <view class="inputView">
+  <input class="inputPassword" placeholder="输入你想搜寻的"/>
+</view>
+</view>
+<view class="left">
+  <view class="rili">
+    <view class="riqi">
+       <p>OCT.21</p>
+    </view>
+  <view class="person"><text>身高：164\n体重：50kg\n年龄：20岁\n忌口：\n [芒果]：有相关过敏史 </text></view>
+  <view class="line">_________________________</view>
+  <view class="person"><text>今日摄入：\n[米饭]:150g 166大卡\n[青菜]:50g 66大卡\n[鸡蛋]:150g 66大卡\n  </text></view>
+  </view>
+  <view class="tixing">
+    <view class="task">[一小时后喝水]</view>
+    <view class="person">提醒倒计时：</view>
+    <view class="count">0: 23: 20</view>
+  </view>
+</view >
+<view class="right">
+<view class="module1" bindtap="bind1" ><p>营养科普</p>
+</view>
+<view class="module2"><p>今日食谱</p>
+</view>
+<view class="module3"><p>食源探索</p>
+</view>
 </view>

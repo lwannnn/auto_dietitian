@@ -1,0 +1,11 @@
+<!--pages/science/question.wxml-->
+<view class="back">
+  <view class="que-box">
+    <view class="que-word">Q:维生素c可以预防感冒么?
+    </view>
+    <view class="ans-word">
+      <view class="ans-word-text">A：</view>
+      <view class="ans-word-text">您好！维生素C的功效是提升您的免疫系统的抵抗力。但是它不能作为药品预防或者治疗感冒。目前研究证据表明，维生素C对减少感冒的发病率并无显著帮助，但是维生素C对缓解感冒症状，减少感冒持续的周期可能有潜在的正面效果。</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/science/introduce.wxml-->
+<image  src="img/back.JPG" class="back-img"></image>
+<view class="box">
+  <view class="name-box">
+    <view class="name">
+      <view class="style1">维他命C</view>
+  <view class="style2">Vitamin C</view>
+    </view>
+    <image src="img/vc.PNG" class="vitamin-img"></image>
+</view>
+<view class="line"></view>
+<view class="context">
+  <view class="style1">研究成果</view>
+  <view class="style2"><text>有助于维护免疫系统功能，帮助缓解感冒症状\n参与胶原蛋白合成，有助于加速组织愈合\n有助于加速运动后肌肉恢复\n有助于调节血压，血脂</text></view>
+  <view class="line"></view>
+</view>
+<view class="context">
+  <view class="style1">食物来源</view>
+  <view class="style2"><text>主要来源于水果蔬菜，如橙子，草莓，猕猴桃，菜椒，西蓝花，番茄等。</text></view>
+  <view class="line"></view>
+</view>
+<view class="context">
+  <view class="style1">常见疑问</view>
+  <view bindtap="question" class="style2"><text>维生素c可以预防感冒么？</text></view>
+  <view class="line"></view>
+  <view class="style2"><text>维生素c和钙可以一起吃么？</text></view>
+  <view class="line"></view>
+  <view class="style2"><text>过量维生素c为什么会导致肠胃不适？</text></view>
+  <view class="line"></view>
+  <view class="style2"><text>白癜风，可以服用VC吗？</text></view>
+  <view class="line"></view>
+</view>
+
+</view>
+

@@ -1,0 +1,109 @@
+/* pages/science/index.wxss */
+.inputView {
+  line-height: 50px; 
+  float: right;
+  width: 60%;
+  border-radius:10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  border:1px solid #999999;
+  background-color:#EEEEEE;
+ }
+ .title{
+  line-height: 50px; 
+  float: left;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+ }
+ .inputNumber,.inputPassword{
+  flex: block; 
+  float: left; 
+  text-align: left; 
+  margin:5px 15px;
+  color: #cccccc; 
+  font-size: 12px
+ }
+.index{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+}
+.module_box
+{
+  margin: 10px 10px;
+}
+.module{
+  margin: 10px 0px;
+  border-radius: 10px;
+  height: 100px;
+  width:auto;
+  
+  align-items: center;
+  display: flex;
+}
+
+.context{
+box-shadow: 0px 0px 10px #B3B3B3;
+border-radius: 10px;
+height: 100px;
+width: 88%;
+float: left;
+align-items: center;
+}
+.detail{
+  box-shadow: 0px 0px 10px #B3B3B3;
+  border-radius: 0px 10px 10px 0px;
+  height: 40px;
+  width: 12%;
+  float: right;
+  display: table-cell; 
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+  background-color: #80BDE6;
+}
+.white
+{
+  font-size: 12px;
+  color:white;
+}
+.detail image
+{
+height: 60%;
+width: 60%;
+}
+.img{
+margin: 10px;
+height: 80px;
+width: 80px;
+float: left;
+border-radius: 10px;
+border:1px solid #999999;
+}
+.word{
+margin: 10px 0px;
+float:right;
+height: 80px;
+width: 150px;
+text-align: left;
+}
+.style1{
+  font-weight: bold;
+  font-size: 15px;
+}
+.style2{
+  font-size: 12px;
+  color:gray
+}
+.day{
+  color:orange;
+}
+.week{
+  color: red;
+}

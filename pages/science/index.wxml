@@ -1,0 +1,56 @@
+<!--pages/science/index.wxml-->
+<view class="index">
+  <view class="title">营养科普</view>
+  <view class="inputView">
+  <input class="inputPassword" placeholder="输入你想搜寻的"/>
+  </view>
+  
+</view>
+<view class="module_box">
+  <view class="module">
+    <view class="context">
+      <image class="img " src="img/vc.PNG">img</image>
+      <view class="word">
+        <view class="style1">维生素c</view>
+        <view class="style2 day">每日一颗</view>
+        <view class="style2">提升免疫力、参与胶原蛋白合成</view>
+        <view class="style2">适合高压、吸烟人群</view>
+      </view>
+    </view>
+    <view class="detail" >
+      <image bindtap="vitaminc" src="img/detail.png"></image>
+      <view class="white">详细</view>
+    </view>
+  </view>
+  <view class="module">
+    <view class="context">
+      <image class="img " src="img/omg3.PNG"></image>
+      <view class="word">
+        <view class="style1">Omege-3</view>
+        <view class="style2 day">每日一颗</view>
+        <view class="style2">降血脂，保护心脏、大脑和眼睛</view>
+        <view class="style2">适合高压人群</view>
+      </view>
+    </view>
+    <view class="detail" >
+      <image src="img/detail.png"></image>
+      <view class="white">详细</view>
+    </view>
+  </view>
+  <view class="module">
+    <view class="context">
+      <image class="img " src="img/vc.PNG">img</image>
+      <view class="word">
+        <view class="style1">维生素E</view>
+        <view class="style2 week">每周一颗</view>
+        <view class="style2">抵抗自由基，改善免疫力</view>
+        <view class="style2">被认为可以改善肤质</view>
+      </view>
+    </view>
+    <view class="detail" >
+      <image src="img/detail.png"></image>
+      <view class="white">详细</view>
+    </view>
+  </view>
+
+</view>

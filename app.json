@@ -17,9 +17,10 @@
     "pages/recipes/index",
     "pages/personaldata/index",
     "pages/personaldata/editbloodsugar",
-    "pages/personaldata/editfoodlist"
-    
-    
+    "pages/personaldata/editfoodlist",
+    "pages/science/index",
+    "pages/science/introduce",
+    "pages/science/question"
   ],
   "window":{
     "backgroundTextStyle":"light",

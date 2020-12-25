@@ -15,6 +15,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  bind1:function(){
+    wx.navigateTo({
+      url: '../science/index'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
