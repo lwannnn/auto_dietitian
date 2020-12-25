@@ -77,4 +77,6 @@
     </view>
   </view>
   </view>
+  
+  <button class="Btn sureBtn" bindtap="gotoIndexPage">确定</button>
 </view>

@@ -12,7 +12,7 @@ Page({
         "category_id": 6,
         "goods_item": [{
           "goods_id": 1,
-          "count": 200,//数量
+          "count": 200,
           "store_id": 1,
           "category_id": 6,
           "goods": {
@@ -221,7 +221,7 @@ Page({
         "category_id": 6,
         "goods_item": [{
           "goods_id": 1,
-          "count": 200,//数量
+          "count": 200,
           "store_id": 4,
           "category_id": 6,
           "goods": {
@@ -430,7 +430,7 @@ Page({
         "category_id": 6,
         "goods_item": [{
           "goods_id": 1,
-          "count": 200,//数量
+          "count": 200,
           "store_id": 7,
           "category_id": 6,
           "goods": {
@@ -824,10 +824,19 @@ selectLists: function () {
     }
   }
   console.log(food_itemlists);
-  var cheaclLists = JSON.stringify(food_itemlists);//将 JavaScript 值转换为 JSON 字符串
-  // console.log(cheaclLists)
+  var foodLists =(food_itemlists);//将 JavaScript 值转换为 JSON 字符串
+  // console.log(foodLists)
   this.setData({
-    store_goods: cheaclLists, //传给后台的商品id
+    store_goods: foodLists, //传给后台的商品id
+  })
+},
+
+gotoIndexPage: function () {
+  
+  let item = encodeURIComponent(JSON.stringify(this.data.store_goods))
+
+  wx.navigateTo({
+    url: '/pages/personaldata/index?foodLists='+item,//要跳转到的页面路径
   })
 },
 

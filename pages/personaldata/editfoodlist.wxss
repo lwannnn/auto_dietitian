@@ -55,7 +55,7 @@ checkbox-group checkbox-group>label>text {
 }
 
 .orderBuy {
-  padding-bottom: 110rpx;
+  padding-bottom: 20px;
 }
 
 .weis {
@@ -138,3 +138,16 @@ checkbox-group checkbox-group>label>text {
   width: 100rpx;
   vertical-align: middle;
 }
+
+.Btn { 
+  width: 90%; 
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+ }
+
+ .sureBtn{
+   background-color: #2D61D3;
+ }

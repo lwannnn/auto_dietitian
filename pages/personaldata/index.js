@@ -9,20 +9,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    iniheight:180,
   },
 
-  gotoEditbloodPage: function (options) {
+  setHeight: function(e){
+    this.setData({
+    stature: this.data.iniheight
+  })
+  },
+
+  gotoEditbloodPage: function () {
     wx.navigateTo({
       url: '/pages/personaldata/editbloodsugar',//要跳转到的页面路径
     })
   },
-  gotoEditlistPage: function (options) {
+  gotoEditlistPage: function () {
     wx.navigateTo({
       url: '/pages/personaldata/editfoodlist',//要跳转到的页面路径
     })
   },
 
+  displayFoodLists: function(){
+    if(options.foodLists!=undefined)
+    console.log(JSON.parse(decodeURIComponent(options.foodLists)));
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -30,9 +40,12 @@ Page({
     // 屏幕宽度
     this.setData({
       imageWidth: wx.getSystemInfoSync().windowWidth
-    }) ;
-    //console.log(this.data.imageWidth) ;
- 
+    });
+    //console.log(this.data.imageWidth) ;JSON.parse(options)
+    //console.log(options.foodLists);
+    
+    // {var a=JSON.parse(options.foodLists);
+    // console.log(a.count);}
     //计算屏幕宽度比列
     windowW = this.data.imageWidth/375;
   },

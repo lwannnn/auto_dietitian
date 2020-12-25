@@ -1,11 +1,26 @@
 /* pages/personaldata/index.wxss */
-.contain{
-  margin: 20px 20px 0px 20px;
+page{
+  background-color: #f1f3f5;
+  letter-spacing: 1px;
+}
+
+.toppart{
+  color: black;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  background-color: #eeeef5;
+}
+
+.foodlist{
+  background-color: white;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .headclass{
-  display: block;
-  float: left;
+  display: inline-block;
+  margin-left: 8px;
+  letter-spacing: 0px;
 }
 
 .headimg{
@@ -16,63 +31,56 @@
 }
 
 .basicdata{
-  display: block;
-  float: right;
+  display: inline-block;
+  margin-left: 25px;
 }
 
 .datatitle{
   margin-bottom: 15px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .inputEdit {
   display: inline-block;
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
+  color: #a09f9f;
   width: 100rpx;
   vertical-align: middle;
 }
 
 .projecttext{
-  display: block;
-  float: left;
+  display: inline-block;
+  color: #7a7a7a;
+  line-height: 28px;
 }
 
 .datatext{
-  display: block;
-  float: right;
+  display: inline-block;
   text-align: right;
   margin-left: 60px;
+  line-height: 28px;
+}
+
+.basictext{
+  color: #333333;
+  letter-spacing: 0px;
 }
 
 .linechart{
   display: block;
   clear: both;
   padding-top: 30px;
+  background-color: white;
 }
 
 .project{
-  margin-bottom: 15px;
+  margin: 0 20px 15px 20px;
 }
 
 .canvas {
   width: 750rpx;
   height: 500rpx;
-}
-
-.btn{
-  width: 150px;
-  height: 25px;
-  font-size: 14px;
-  border: 1px solid #2D61D3;
-  padding: 0;
-  border-radius: 4px;
-  margin-top: 5px;
-  text-align: center;
-}
-.btn-selected{
-  background-color: #2D61D3;
-  color: #ffffff;
 }
 
 .foodtitle{
@@ -86,6 +94,11 @@
   float: right;
 }
 
+.breakfast,.tips{
+  margin: 0 20px;
+}
+
 .tips{
   color: gray;
+  margin-bottom: 10px;
 }
