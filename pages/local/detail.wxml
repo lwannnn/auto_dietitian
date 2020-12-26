@@ -1,20 +1,30 @@
 <!--pages/local/detail.wxml-->
+<text class="goBack" bindtap="goBack">返回</text>
 <view class="menu_container">
   <image src="../../assets/salad.png" mode="widthFix" style="width:100%"></image>
-  <view style="font-weight:bold;font-size:18px;text-align:center;">蔬菜沙拉</view>
-  <view style="display:flex;margin-top:8%">
-    <text style="color:#4BB000;font-weight:bold;">蔬菜小林</text>
-    <image src="../../assets/love.png" mode="widthFix" style="width:10%"></image>
-    <text>830 </text>
-    <image src="../../assets/time.png" mode="widthFix" style="width:10%"></image>
-    <text> 39min</text>
-  </view>
-  <view style="font-size:11px;margin-top:3%">
-    制作方式：
-    这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样
-    ………
-  </view>
-
+  <view style="font-weight:bold;font-size:16px;text-align:center;color:#697376">蔬菜沙拉</view>
+  <view style="display:flex;margin-top:8%;color:#697376;font-size:12px">
+      <text class="user_name" >蔬菜小林</text>
+      <image src="../../assets/love.png" mode="widthFix" style="width:8%"></image>
+      <text style="margin:3px">830 </text>
+      <image src="../../assets/time.png" mode="widthFix" style="width:8%"></image>
+      <text style="margin:3px"> 39min</text>
+    </view>
+    <view style="font-size:9px;margin-top:3%;color:#697376">
+      <text style="font-weight:bold;font-size:10px">原材料：</text>
+      <view>这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样</view>
+      ………
+    </view>
+    <view style="font-size:9px;margin-top:3%;color:#697376">
+      <text style="font-weight:bold;font-size:10px">好处：</text>
+      <view>这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样</view>
+      ………
+    </view>
+    <view style="font-size:9px;margin-top:3%;color:#697376">
+      <text style="font-weight:bold;font-size:10px">制作方式：</text>
+      <view>这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样这样那样</view>
+      ………
+    </view>
   <view style="display:flex;margin-top:10%">
 
     <button class="detail-btn">收藏</button>

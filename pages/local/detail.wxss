@@ -2,11 +2,33 @@
 page{
   background-color:#EEF2F5
 }
+
+.goBack{
+  color:#2D61D3
+}
 .menu_container
 {
-  width:90%;
+  width:80%;
   margin-left:5%;
   margin-top:5%;
-  height:800px;
+  height:380px;
   background-color:white;
+  padding:5%
+}
+.user_name
+{
+ color:#4BB000;
+ font-weight:bold;
+ margin-left:10%;
+ margin-top:5px;
+}
+
+.detail-btn
+{
+  background-color: white;
+  color:#FB7500;
+  border: 1px solid #FB7500; 
+  float:right;
+ text-align: center;
+ font-size:12px
 }
