@@ -1,27 +1,29 @@
 <!--pages/login/register.wxml-->
 <view class="big">
   <view class="registertext">注册</view>
-  <view><image src="img/Avatar.png" class="headimg"/></view>
+  <view  class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  </view>
   <view class="inputView logininput">
-    <labal class="loginlab">姓名*：</labal>
-    <input class="inputName" placeholder="姓名"/>
+    <labal class="loginlab">用户名*：</labal>
+    <input class="inputName" placeholder="用户名" bindinput='username'/>
   </view>
   <view class="inputView">
     <label class="loginlab">密码*：</label>
-    <input class="inputName" placeholder="密码"/>
+    <input class="inputName" placeholder="密码" bindinput='password' password="true"/>
   </view>
   <view class="inputView">
-    <label class="loginlab">手机号*：</label>
-    <input class="inputPassword" placeholder="手机号"/>
+    <label class="loginlab1">身高*(cm)：</label>
+    <input class="inputPassword" placeholder="身高" bindinput='height'/>
   </view>
   <view class="inputView">
-    <label class="loginlab">邀请码：</label>
-    <input class="inputPassword" placeholder="邀请码"/>
+    <label class="loginlab1">体重*(kg)：</label>
+    <input class="inputPassword" placeholder="体重" bindinput='weight'/>
   </view>
   <view>
-    <switch class='switch-view' checked="{{switch1Checked}}" bindchange="switch1Change" type='switch'/>
+    <switch class='switch-view' checked="{{switchChecked}}" bindchange="switchChange" type='switch'/>
     <view>我已经接受了</view>
     <view class="doc" bindtap="gotoDocumentPage">《条款》和《条件》</view>
   </view>
-  <button class="Btn registerBtn" bindtap="gotoIndexPage">注册</button>
+  <button class="Btn registerBtn" bindtap="region">注册</button>
 </view>

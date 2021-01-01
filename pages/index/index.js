@@ -5,6 +5,8 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    height:'',
+    weight:'',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -21,6 +23,23 @@ Page({
     })
   },
   onLoad: function () {
+    var that = this;
+    wx.getStorage({
+      key: 'height',
+      success:function(res){
+        that.setData({
+          height:res.data
+        });
+      }
+    })
+    wx.getStorage({
+      key: 'weight',
+      success:function(res){
+        that.setData({
+          weight:res.data
+        });
+      }
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

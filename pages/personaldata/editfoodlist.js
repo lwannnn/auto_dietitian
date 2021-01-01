@@ -14,56 +14,36 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 1,
+          "title": "米饭",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "米饭",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 300,
           "store_id": 1,
+          "title": "白粥",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "白粥",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 350,
           "store_id": 1,
+          "title": "面条",
           "category_id": 6,
-          "goods": {
-            "id": 30,
-            "title": "面条",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 350,
           "store_id": 1,
+          "title": "米线",
           "category_id": 6,
-          "goods": {
-            "id": 30,
-            "title": "米线",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 250,
           "store_id": 1,
+          "title": "麦片",
           "category_id": 6,
-          "goods": {
-            "id": 31,
-            "title": "麦片",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "主食"
@@ -76,77 +56,50 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 2,
+          "title": "粉丝包",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "粉丝包",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 100,
           "store_id": 2,
+          "title": "酸菜包",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "酸菜包"
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 100,
           "store_id": 2,
+          "title": "猪肉包",
           "category_id": 6,
-          "goods": {
-            "id": 3,
-            "title": "猪肉包",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 200,
           "store_id": 2,
+          "title": "紫菜卷",
           "category_id": 6,
-          "goods": {
-            "id": 4,
-            "title": "紫菜卷",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 300,
           "store_id": 2,
+          "title": "鸡蛋卷",
           "category_id": 6,
-          "goods": {
-            "id": 5,
-            "title": "鸡蛋卷",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 6,
           "count": 200,
           "store_id": 2,
+          "title": "牛肉饼",
           "category_id": 6,
-          "goods": {
-            "id": 6,
-            "title": "牛肉饼",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 7,
           "count": 200,
           "store_id": 2,
+          "title": "奶黄包",
           "category_id": 6,
-          "goods": {
-            "id": 7,
-            "title": "奶黄包",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "面点"
@@ -160,56 +113,36 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 3,
+          "title": "豆浆",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "豆浆",
-            "category_id": 6
-          },
           "unit_text": "ml"
         }, {
           "goods_id": 2,
           "count": 200,
           "store_id": 3,
+          "title": "牛奶",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "牛奶",
-            "category_id": 6
-          },
           "unit_text": "ml"
         }, {
           "goods_id": 3,
           "count": 200,
           "store_id": 3,
+          "title": "酸奶",
           "category_id": 6,
-          "goods": {
-            "id": 3,
-            "title": "酸奶",
-            "category_id": 6
-          },
           "unit_text": "ml"
         }, {
           "goods_id": 4,
           "count": 200,
           "store_id": 3,
+          "title": "豆奶",
           "category_id": 6,
-          "goods": {
-            "id": 4,
-            "title": "豆奶",
-            "category_id": 6
-          },
           "unit_text": "ml"
         }, {
           "goods_id": 5,
           "count": 200,
           "store_id": 3,
+          "title": "咖啡",
           "category_id": 6,
-          "goods": {
-            "id": 5,
-            "title": "咖啡",
-            "category_id": 6
-          },
           "unit_text": "ml"
         }],
         "category_title": "饮品"
@@ -223,56 +156,36 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 4,
+          "title": "米饭",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "米饭",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 300,
           "store_id": 4,
+          "title": "白粥",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "白粥",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 350,
           "store_id": 4,
+          "title": "面条",
           "category_id": 6,
-          "goods": {
-            "id": 30,
-            "title": "面条",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 350,
           "store_id": 4,
+          "title": "米线",
           "category_id": 6,
-          "goods": {
-            "id": 30,
-            "title": "米线",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 250,
           "store_id": 4,
+          "title": "麦片",
           "category_id": 6,
-          "goods": {
-            "id": 31,
-            "title": "麦片",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "主食"
@@ -285,77 +198,50 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 5,
+          "title": "牛肉",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "牛肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 100,
           "store_id": 5,
+          "title": "猪肉",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "猪肉"
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 100,
           "store_id": 5,
+          "title": "羊肉",
           "category_id": 6,
-          "goods": {
-            "id": 3,
-            "title": "羊肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 200,
           "store_id": 5,
+          "title": "鸡肉",
           "category_id": 6,
-          "goods": {
-            "id": 4,
-            "title": "鸡肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 300,
           "store_id": 5,
+          "title": "鸭肉",
           "category_id": 6,
-          "goods": {
-            "id": 5,
-            "title": "鸭肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 6,
           "count": 200,
           "store_id": 5,
+          "title": "鱼肉",
           "category_id": 6,
-          "goods": {
-            "id": 6,
-            "title": "鱼肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 7,
           "count": 200,
           "store_id": 5,
+          "title": "虾仁",
           "category_id": 6,
-          "goods": {
-            "id": 7,
-            "title": "虾仁",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "肉类"
@@ -369,56 +255,36 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 6,
+          "title": "大白菜",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "大白菜",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 200,
           "store_id": 6,
+          "title": "生菜",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "生菜",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 200,
           "store_id": 6,
+          "title": "上海青",
           "category_id": 6,
-          "goods": {
-            "id": 3,
-            "title": "上海青",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 200,
           "store_id": 6,
+          "title": "菜花",
           "category_id": 6,
-          "goods": {
-            "id": 4,
-            "title": "菜花",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 200,
           "store_id": 6,
+          "title": "西兰花",
           "category_id": 6,
-          "goods": {
-            "id": 5,
-            "title": "西兰花",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "菜类"
@@ -432,56 +298,36 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 7,
+          "title": "米饭",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "米饭",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 300,
           "store_id": 7,
+          "title": "白粥",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "白粥",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 350,
           "store_id": 7,
+          "title": "面条",
           "category_id": 6,
-          "goods": {
-            "id": 30,
-            "title": "面条",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 350,
           "store_id": 7,
+          "title": "米线",
           "category_id": 6,
-          "goods": {
-            "id": 30,
-            "title": "米线",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 250,
           "store_id": 7,
+          "title": "麦片",
           "category_id": 6,
-          "goods": {
-            "id": 31,
-            "title": "麦片",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "主食"
@@ -494,77 +340,50 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 8,
+          "title": "牛肉",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "牛肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 100,
           "store_id": 8,
+          "title": "猪肉",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "猪肉"
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 100,
           "store_id": 8,
+          "title": "羊肉",
           "category_id": 6,
-          "goods": {
-            "id": 3,
-            "title": "羊肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 200,
           "store_id": 8,
+          "title": "鸡肉",
           "category_id": 6,
-          "goods": {
-            "id": 4,
-            "title": "鸡肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 300,
           "store_id": 8,
+          "title": "鸭肉",
           "category_id": 6,
-          "goods": {
-            "id": 5,
-            "title": "鸭肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 6,
           "count": 200,
           "store_id": 8,
+          "title": "鱼肉",
           "category_id": 6,
-          "goods": {
-            "id": 6,
-            "title": "鱼肉",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 7,
           "count": 200,
           "store_id": 8,
+          "title": "虾仁",
           "category_id": 6,
-          "goods": {
-            "id": 7,
-            "title": "虾仁",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "肉类"
@@ -578,56 +397,36 @@ Page({
           "goods_id": 1,
           "count": 200,
           "store_id": 9,
+          "title": "大白菜",
           "category_id": 6,
-          "goods": {
-            "id": 1,
-            "title": "大白菜",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 2,
           "count": 200,
           "store_id": 9,
+          "title": "生菜",
           "category_id": 6,
-          "goods": {
-            "id": 2,
-            "title": "生菜",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 3,
           "count": 200,
           "store_id": 9,
+          "title": "上海青",
           "category_id": 6,
-          "goods": {
-            "id": 3,
-            "title": "上海青",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 4,
           "count": 200,
           "store_id": 9,
+          "title": "菜花",
           "category_id": 6,
-          "goods": {
-            "id": 4,
-            "title": "菜花",
-            "category_id": 6
-          },
           "unit_text": "g"
         }, {
           "goods_id": 5,
           "count": 200,
           "store_id": 9,
+          "title": "西兰花",
           "category_id": 6,
-          "goods": {
-            "id": 5,
-            "title": "西兰花",
-            "category_id": 6
-          },
           "unit_text": "g"
         }],
         "category_title": "菜类"
@@ -785,9 +584,10 @@ selectLists: function () {
       for (var k = 0; k < goods_item.length; k++) {
         if (goods_item[k].checked == true) {
           food_itemlists.push({
-            "goods_id": goods_item[k].goods_id,
             "store_id": goods_item[k].store_id,
             "count": goods_item[k].count,
+            "title": goods_item[k].title,
+            "unit_text":goods_item[k].unit_text
           })
         }
       }
@@ -800,9 +600,10 @@ selectLists: function () {
       for (var k = 0; k < goods_item.length; k++) {
         if (goods_item[k].checked == true) {
           food_itemlists.push({
-            "goods_id": goods_item[k].goods_id,
             "store_id": goods_item[k].store_id,
             "count": goods_item[k].count,
+            "title": goods_item[k].title,
+            "unit_text":goods_item[k].unit_text
           })
         }
       }
@@ -815,9 +616,10 @@ selectLists: function () {
       for (var k = 0; k < goods_item.length; k++) {
         if (goods_item[k].checked == true) {
           food_itemlists.push({
-            "goods_id": goods_item[k].goods_id,
             "store_id": goods_item[k].store_id,
             "count": goods_item[k].count,
+            "title": goods_item[k].title,
+            "unit_text":goods_item[k].unit_text
           })
         }
       }
@@ -834,8 +636,8 @@ selectLists: function () {
 gotoIndexPage: function () {
   
   let item = encodeURIComponent(JSON.stringify(this.data.store_goods))
-
-  wx.navigateTo({
+  //redirectTo：关闭当前页面，跳转到应用内的某个页面，但是不允许跳转到 tabbar设置的 页面。
+  wx.redirectTo({
     url: '/pages/personaldata/index?foodLists='+item,//要跳转到的页面路径
   })
 },

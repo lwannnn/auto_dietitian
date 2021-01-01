@@ -12,7 +12,7 @@
             <label class="checkbox twoJi" wx:for="{{category_item.goods_item}}" wx:for-item='goods_item' wx:key='key' wx:for-index="son_index" data-child_id="{{son_index}}" data-category_id="{{goods_item.category_id}}" data-store_id="{{goods_item.store_id}}" data-id="{{son_index}}"
             catchtap='childChange'>
               <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
-              <text class="titles overs">{{goods_item.goods.title}}</text>
+              <text class="titles overs">{{goods_item.title}}</text>
               <view class="weis">
                 <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
                 <text> {{goods_item.unit_text}}</text>
@@ -37,7 +37,7 @@
             <label class="checkbox twoJi" wx:for="{{category_item.goods_item}}" wx:for-item='goods_item' wx:key='key' wx:for-index="son_index" data-child_id="{{son_index}}" data-category_id="{{goods_item.category_id}}" data-store_id="{{goods_item.store_id}}" data-id="{{son_index}}"
             catchtap='childChange'>
               <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
-              <text class="titles overs">{{goods_item.goods.title}}</text>
+              <text class="titles overs">{{goods_item.title}}</text>
               <view class="weis">
                 <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
                 <text> {{goods_item.unit_text}}</text>
@@ -64,7 +64,7 @@
             <label class="checkbox twoJi" wx:for="{{category_item.goods_item}}" wx:for-item='goods_item' wx:key='key' wx:for-index="son_index" data-child_id="{{son_index}}" data-category_id="{{goods_item.category_id}}" data-store_id="{{goods_item.store_id}}" data-id="{{son_index}}"
             catchtap='childChange'>
               <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
-              <text class="titles overs">{{goods_item.goods.title}}</text>
+              <text class="titles overs">{{goods_item.title}}</text>
               <view class="weis">
                 <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
                 <text> {{goods_item.unit_text}}</text>

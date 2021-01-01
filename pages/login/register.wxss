@@ -7,9 +7,19 @@
   margin-bottom: 25px;
 }
 
-.headimg{
-  width: 80px;
-  height: 80px;
+.userinfo {
+  width:100%;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: #f66;*/
+  /*position: absolute*/
+}
+
+.userinfo-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
 .logininput{
@@ -22,10 +32,14 @@
   margin-bottom: 5px;
  }
 
- .loginlab{
+ .loginlab, .loginlab1{
   margin: 15px 15px 15px 10px; 
   color: #545454; 
   font-size: 14px;
+ }
+
+ .loginlab1{
+   margin: 15px 0px 15px 10px;
  }
 
  .inputName,.inputPassword{
@@ -34,7 +48,6 @@
   text-align: right;
   margin-top: 12px;
   margin-right: 22px;
-  color: #cccccc; 
   font-size: 14px;
  }
 

@@ -1,8 +1,10 @@
 <!--pages/personaldata/index.wxml-->
   <view class="toppart">
     <view class="headclass">
-      <view class="headimg"></view>
-      <view>我叫XXXXX</view>
+      <view  class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+      <view>{{username}}</view>
     </view>
     <view class="basicdata">
      <view class="datatitle">基本数据</view>
@@ -13,13 +15,13 @@
       </view>
       <view class="datatext">
         <view>
-          <input class="inputEdit" value="{{stature}}" bindtap="setHeight"></input>
+          <text>{{height}}</text>
           <text class="basictext">cm</text>
         </view>
         <view>
-          <input class="inputEdit" value="60"></input>
+          <text>{{weight}}</text>
           <text class="basictext">kg</text></view>
-        <view class="basictext">7天</view>
+        <view class="basictext">1天</view>
       </view>
     </view>
   </view>
@@ -39,10 +41,10 @@
       <image class="editbtn" src="img/editbutton.png" bindtap="gotoEditlistPage"></image>
     </view>
     <view class="breakfast">早餐</view>
-    <view class="tips" bindtap="displayFoodLists">还没有记录噢！</view>
+    <view class="tips">{{breakfastlistdata}}</view>
     <view class="breakfast">午餐</view>
-    <view class="tips">还没有记录噢！</view>
+    <view class="tips">{{lunchlistdata}}</view>
     <view class="breakfast">晚餐</view>
-    <view class="tips">还没有记录噢！</view>
+    <view class="tips">{{supperlistdata}}</view>
   </view>
 </view>

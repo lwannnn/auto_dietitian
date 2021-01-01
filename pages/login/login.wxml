@@ -4,13 +4,12 @@
   <view class="Register" bindtap="gotoRegisterPage">注册</view>
 
 <view class="inputView logininput">
-  <labal class="loginlab">账号：</labal>
-  <input class="inputNumber" placeholder="请输入手机号"/>
+  <labal class="loginlab">用户名：</labal>
+  <input class="inputNumber" placeholder="请输入用户名" bindinput='inusername'/>
 </view>
 <view class="inputView">
   <label class="loginlab">密码：</label>
-  <input class="inputPassword" placeholder="密码"/>
+  <input class="inputPassword" placeholder="密码" bindinput='inpassword' password="true"/>
 </view>
 </view>
-<button class="Btn loginBtn" bindtap="gotoIndexPage">登录</button>
-<text class="forget">忘记密码？</text>
+<button class="Btn loginBtn" bindtap="login">登录</button>

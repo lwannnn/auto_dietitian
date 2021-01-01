@@ -9,7 +9,11 @@
     <view class="riqi">
        <p>OCT.21</p>
     </view>
-  <view class="person"><text>身高：164\n体重：50kg\n年龄：20岁\n忌口：\n [芒果]：有相关过敏史 </text></view>
+  <view class="person">
+    <text>身高：{{height}}cm\n</text>
+    <text>体重：{{weight}}kg\n</text>
+    <text>忌口：\n [芒果]：有相关过敏史 </text>
+  </view>
   <view class="line">_________________________</view>
   <view class="person"><text>今日摄入：\n[米饭]:150g 166大卡\n[青菜]:50g 66大卡\n[鸡蛋]:150g 66大卡\n  </text></view>
   </view>
