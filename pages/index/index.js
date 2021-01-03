@@ -7,7 +7,12 @@ Page({
     motto: 'Hello World',
     height:'',
     weight:'',
+    avoidfood:'',
+    breakfastlistdata:'',
+    lunchlistdata:'',
+    supperlistdata:'',
     userInfo: {},
+    currentdate:'',
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -22,24 +27,39 @@ Page({
       url: '../science/index'
     })
   },
+  bind2:function(){
+    wx.navigateTo({
+      url: '../personaldata/index'
+    })
+  },
+  bind3:function(){
+    wx.navigateTo({
+      url: '../personaldata/editbloodsugar'
+    })
+  },
+  bind4:function(){
+    wx.navigateTo({
+      url: '../recipes/index'
+    })
+  },
+  bind5:function(){
+    wx.navigateTo({
+      url: '../search/index'
+    })
+  },
   onLoad: function () {
-    var that = this;
-    wx.getStorage({
-      key: 'height',
-      success:function(res){
-        that.setData({
-          height:res.data
-        });
-      }
+    var timestamp = Date.parse(new Date());
+    var date = new Date(timestamp);
+    //获取年份  
+    var Y =date.getFullYear();
+    //获取月份  
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //获取当日日期 
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    this.setData({
+      currentdate: Y + '.'  + M+ '.' + D
     })
-    wx.getStorage({
-      key: 'weight',
-      success:function(res){
-        that.setData({
-          weight:res.data
-        });
-      }
-    })
+    console.log("当前时间：" + Y + '年'  + M+ '月' + D+ '日' );
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -74,5 +94,63 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+    /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    //获取信息
+    var that = this;
+    setTimeout(() => {
+            
+      wx.getStorage({
+        key: "height",
+        success: res =>{
+          this.setData({
+            height: res.data
+          })
+        }
+      })
+      wx.getStorage({
+        key: 'weight',
+        success:function(res){
+          that.setData({
+            weight:res.data
+          });
+        }
+      })  
+      wx.getStorage({
+        key: 'avoidfood',
+        success:function(res){
+          that.setData({
+            avoidfood:res.data
+          });
+        }
+      }) 
+      wx.getStorage({
+        key: 'breakfastlistdata',
+        success:function(res){
+          that.setData({
+            breakfastlistdata:res.data
+          });
+        }
+      }) 
+      wx.getStorage({
+        key: 'lunchlistdata',
+        success:function(res){
+          that.setData({
+            lunchlistdata:res.data
+          });
+        }
+      }) 
+      wx.getStorage({
+        key: 'supperlistdata',
+        success:function(res){
+          that.setData({
+            supperlistdata:res.data
+          });
+        }
+      }) 
+    }, 1000)
+  },
 })

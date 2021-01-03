@@ -1,2 +1,16 @@
 <!--pages/register/index.wxml-->
-<text>pages/register/index.wxml</text>
+<view class="contain">
+  <view>
+    <text>身高(cm)：</text>
+    <input bindinput="heightInput" value="{{height}}"/>
+  </view>
+  <view>
+    <text>体重(kg)：</text>
+    <input bindinput="weightInput" value="{{weight}}"/>
+  </view>
+  <view>
+    <text>忌口：</text>
+    <input bindinput="infoInput" value="{{info}}"/>
+  </view>
+  <button class="Btn" bindtap="submit">提交</button>
+</view>

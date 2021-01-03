@@ -11,11 +11,11 @@
           </view>
           <view>
             <text>日期</text>
-            <input name='username{{index}}' placeholder="请输入日期" data-idx='{{index}}' bindinput='getInputVal' value="{{item.username}}"></input>
+            <input name='date{{index}}' placeholder="请输入日期" data-idx='{{index}}' bindinput='getInputVal' value="{{item.date}}"></input>
           </view>
           <view>
             <text>血糖值</text> 
-            <input type="text" name='position{{index}}' data-idx='{{index}}'  bindinput='getInputPosi' placeholder="请输入血糖值" value="{{item.positions}}"></input>
+            <input type="text" name='quantity{{index}}' data-idx='{{index}}'  bindinput='getInputPosi' placeholder="请输入血糖值" value="{{item.quantity}}"></input>
           </view>
         </view>
 
@@ -23,5 +23,5 @@
     </view>
           <button bindtap='addInput'>增加天数</button>
   </view>
-  <button hover-class="none" formType="submit">确定</button>
+  <button bindtap="submit">确定</button>
 </form>

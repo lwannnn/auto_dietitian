@@ -7,15 +7,20 @@
 <view class="left">
   <view class="rili">
     <view class="riqi">
-       <p>OCT.21</p>
+       <p>{{currentdate}}</p>
     </view>
-  <view class="person">
+  <view class="person" bindtap="bind2">
     <text>身高：{{height}}cm\n</text>
     <text>体重：{{weight}}kg\n</text>
-    <text>忌口：\n [芒果]：有相关过敏史 </text>
+    <text>忌口：\n {{avoidfood}} </text>
   </view>
   <view class="line">_________________________</view>
-  <view class="person"><text>今日摄入：\n[米饭]:150g 166大卡\n[青菜]:50g 66大卡\n[鸡蛋]:150g 66大卡\n  </text></view>
+  <view class="person box">
+    <text>今日摄入：\n</text>
+    <text>{{breakfastlistdata}};</text>
+    <text>{{lunchlistdata}};</text>
+    <text>{{supperlistdata}}</text>
+  </view>
   </view>
   <view class="tixing">
     <view class="task">[一小时后喝水]</view>
@@ -26,8 +31,8 @@
 <view class="right">
 <view class="module1" bindtap="bind1" ><p>营养科普</p>
 </view>
-<view class="module2"><p>今日食谱</p>
+<view class="module2" bindtap="bind4"><p>今日食谱</p>
 </view>
-<view class="module3"><p>食源探索</p>
+<view class="module3" bindtap="bind5"><p>食源探索</p>
 </view>
 </view>

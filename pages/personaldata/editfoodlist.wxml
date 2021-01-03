@@ -14,7 +14,7 @@
               <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
               <text class="titles overs">{{goods_item.title}}</text>
               <view class="weis">
-                <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
+                <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.goods_id}}" data-count="{{goods_item.count}}" data-store_id="{{item.store_id}}" data-goods_id="{{goods_item.goods_id}}" type="digit" value="{{goods_item.count}}" bindinput="editText"></input>
                 <text> {{goods_item.unit_text}}</text>
               </view>
             </label>
@@ -39,7 +39,7 @@
               <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
               <text class="titles overs">{{goods_item.title}}</text>
               <view class="weis">
-                <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
+                <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" data-count="{{goods_item.count}}" data-store_id="{{item.store_id}}" data-goods_id="{{goods_item.goods_id}}" type="digit" value="{{goods_item.count}}" bindinput="editText"></input>
                 <text> {{goods_item.unit_text}}</text>
                 <!--class="method over"-->
               </view>
@@ -66,7 +66,7 @@
               <checkbox value="{{store_item.name}}" checked="{{goods_item.checked}}"/>
               <text class="titles overs">{{goods_item.title}}</text>
               <view class="weis">
-                <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" type="digit" value="{{goods_item.count}}"></input>
+                <input class="inputEdit" bindblur="editInput" data-numid="{{goods_item.id}}" data-count="{{goods_item.count}}" data-store_id="{{item.store_id}}" data-goods_id="{{goods_item.goods_id}}" type="digit" value="{{goods_item.count}}" bindinput="editText"></input>
                 <text> {{goods_item.unit_text}}</text>
                 <!--class="method over"-->
               </view>

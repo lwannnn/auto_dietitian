@@ -122,5 +122,13 @@
     line-height: 100px;
 }
 
+.box{
+  display: -webkit-box;
+ word-break: break-all;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp:4;/*设置 需要显示的行数*/
+}
 
 

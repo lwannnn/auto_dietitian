@@ -49,10 +49,21 @@ Page({
     })
   },
 
+  gotoSettingPage: function (options) {
+    wx.navigateTo({
+      url: '/pages/register/index',//要跳转到的页面路径
+    })
+  },
+
   gotoLoginPage: function (options) {
     wx.navigateTo({
       url: '/pages/login/index',//要跳转到的页面路径
     })
+    try {
+      wx.clearStorageSync()
+    } catch(e) {
+     // Do something when catch error
+    }
   },
 
   /**
@@ -66,7 +77,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this;
+    wx.getStorage({
+      key: 'username',
+      success:function(res){
+        that.setData({
+          username:res.data
+        });
+      }
+    })
   },
 
   /**

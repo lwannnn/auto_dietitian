@@ -1,1 +1,14 @@
 /* pages/register/index.wxss */
+.contain{
+  margin: 20px;
+}
+
+.Btn { 
+  width: 90%; 
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin-top: 15px; 
+  border-radius: 10px;
+  background-color: #2D61D3;
+ }

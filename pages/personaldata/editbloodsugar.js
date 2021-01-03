@@ -6,55 +6,62 @@ Page({
    */
   data: {
     array: [{
-      username: '',
-      positions: ''
+      date: '',
+      quantity: ''
     },{
-      username: '',
-      positions: ''
-    }], //默认显示2个
+      date: '',
+      quantity: ''
+    },{
+      date: '',
+      quantity: ''
+    },{
+      date: '',
+      quantity: ''
+    },{
+      date: '',
+      quantity: ''
+    }], //默认显示5个
   },
 
   addInput: function() {
     var array = this.data.array;
     array.push({
-      username: '',
-      positions: ''
+      date: '',
+      quantity: ''
     });
     this.setData({
       array: array
     })
   },
-  // username
+  // date
   getInputVal:function(e){
     var that=this;
     var idx = e.target.dataset.idx;
     var array=that.data.array;
-    var username=e.detail.value;
+    var date=e.detail.value;
     for(var i=0;i<array.length;i++){
       if (i==idx){
-        array[i].username = username;
+        array[i].date = date;
       }
     }
     that.setData({
       array: array
     })
-    console.log(array);
   },
-  // 职位
+  // quantity
   getInputPosi: function (e) {
     var that = this;
     var idx = e.target.dataset.idx;
     var array = that.data.array;
-    var positions = e.detail.value;
+    var quantity = e.detail.value;
     for (var i = 0; i < array.length; i++) {
       if (i == idx) {
-        array[i].positions = positions;
+        array[i].quantity = quantity;
       }
     }
     that.setData({
       array: array
     })
-    console.log(array);
   },
   delInput:function(e){
     var array = this.data.array;
@@ -68,14 +75,29 @@ Page({
     this.setData({
       array: array
     })
-    console.log(array);
+  },
+
+  submit:function(){
+    wx.setStorage({//存储到本地
+      key:"array",
+      data:this.data.array
+    })
+    console.log(this.data.array)
+    //redirectTo：关闭当前页面，跳转到应用内的某个页面，但是不允许跳转到 tabbar设置的 页面。
+    wx.redirectTo({
+      url: '/pages/personaldata/index',//要跳转到的页面路径
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.setStorage({//存储到本地
+      key:"array",
+      data:[]
+    })
+    console.log(this.data.array)
   },
 
   /**

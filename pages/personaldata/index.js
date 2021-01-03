@@ -17,6 +17,10 @@ Page({
     username:'',
     height:'',
     weight:'',
+    array:[],
+    datearray:[],
+    quantityarray:[],
+    standardarray:[3.9,3.9,3.9,3.9,3.9],
   },
 
   gotoEditbloodPage: function () {
@@ -88,7 +92,7 @@ Page({
         });
       }
     })
-    //图表
+    
     // 屏幕宽度
     this.setData({
       imageWidth: wx.getSystemInfoSync().windowWidth
@@ -96,7 +100,7 @@ Page({
     //计算屏幕宽度比列
     windowW = this.data.imageWidth/375;
 
-    //饮食记录
+    //存储饮食记录
     if(options.foodLists!=undefined){
       //console.log(JSON.parse(decodeURIComponent(options.foodLists)));
       var foodlistdata=JSON.parse(decodeURIComponent(options.foodLists));
@@ -128,6 +132,9 @@ Page({
           })
         }
       }
+      wx.setStorageSync('breakfastlistdata', this.data.breakfastlistdata)
+      wx.setStorageSync('lunchlistdata', this.data.lunchlistdata)
+      wx.setStorageSync('supperlistdata', this.data.supperlistdata)
     }
     else{
       this.setData({
@@ -150,16 +157,38 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    //lineCanvas
+    var that=this;
+    //获取血糖数据
+    try {
+      const value = wx.getStorageSync('array')
+      if (value) {
+        // Do something with return value
+        that.setData({
+          array: value
+        })
+        var array=that.data.array;
+        for(var i=0;i<array.length;i++){
+          that.data.datearray.push(array[i].date);
+          that.data.quantityarray.push(array[i].quantity);
+        }
+        that.setData({
+          datearray:that.data.datearray,
+          quantityarray:that.data.quantityarray
+        })
+      }
+    } catch (e) {
+      // Do something when catch error
+    }
+    //lineCanvas图表绘制
     new wxCharts({
       canvasId: 'lineCanvas',
       type: 'line',
-      categories: ['12-01', '12-02', '12-03', '12-04', '12-05'],
+      categories: this.data.datearray,
       animation: true,
       background: '#f5f5f5',
       series: [{
         name: '我的血糖值',
-        data: [4, 4.2, 3.8, 5.3, 6],
+        data: this.data.quantityarray,//[4, 4.2, 3.8, 5.3, 6],
         format: function (val, name) {
           return val.toFixed(1) + '毫摩尔';
         }
@@ -188,6 +217,32 @@ Page({
         lineStyle: 'curve'
       }
     });
+
+    //获取饮食记录
+    var that = this;
+    var breakfastlistdata=wx.getStorageSync('breakfastlistdata');
+    var lunchlistdata=wx.getStorageSync('lunchlistdata');
+    var supperlistdata=wx.getStorageSync('supperlistdata');
+    this.setData({
+      breakfastlistdata:breakfastlistdata,
+      lunchlistdata:lunchlistdata,
+      supperlistdata:supperlistdata
+    })
+    if(this.data.breakfastlistdata.length==0){
+      this.setData({
+        breakfastlistdata:"还没有记录噢",
+      })
+    }
+    if(this.data.lunchlistdata.length==0){
+      this.setData({
+        lunchlistdata:"还没有记录噢",
+      })
+    }
+    if(this.data.supperlistdata.length==0){
+      this.setData({
+        supperlistdata:"还没有记录噢",
+      })
+    }
   },
 
   /**

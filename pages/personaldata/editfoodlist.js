@@ -434,6 +434,35 @@ Page({
     }]
   },
 
+  editText:function(e){
+    var store_id = e.currentTarget.dataset.store_id;
+    var goods_id = e.currentTarget.dataset.goods_id;
+    goods_id=goods_id-1; 
+    var food_count = e.currentTarget.dataset.count;
+    console.log(store_id);
+    console.log(goods_id);
+    console.log(food_count);
+    //输入的值
+    var value = e.detail.value;
+    //动态拼装设值的属性
+    if(store_id<=3){
+      store_id=store_id-1;
+      var _target = `BreakfastList[${store_id}].category_item[0].goods_item[${goods_id}].count`
+    }
+    else if(store_id<=6&&store_id>3){
+      store_id=store_id-4;
+      var _target = `LunchList[${store_id}].category_item[0].goods_item[${goods_id}].count`
+    }
+    else if(store_id<=9&&store_id>6){
+      store_id=store_id-7;
+      var _target = `SupperList[${store_id}].category_item[0].goods_item[${goods_id}].count`
+    }
+    //赋值
+    this.setData({
+        [_target] : value   //重要！！！   中括号[]必不可少，否则不生效
+    })
+  },
+
 /**
  * 一级选择
  */

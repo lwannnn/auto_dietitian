@@ -64,7 +64,6 @@ Page({
       })
     }
     else {
-      console.log(this.data.username);
       wx.setStorage({//存储到本地
         key:"username",
         data:this.data.username
