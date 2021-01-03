@@ -2,6 +2,7 @@
 Page({
   data: {
     items: [
+      //几个食谱界面
       { name: '1', value: '1',imageUrl:'img/radio1.png' },
       { name: '2', value: '2', checked: 'true',imageUrl:'img/radio2.png' },
       { name: '3', value: '3',imageUrl:'img/radio3.png' },
@@ -13,6 +14,7 @@ Page({
       addValue:e.detail.value
     })
   },
+  //导航函数
 search: function () {
   console.log(this.data.addValue)
   if(this.data.addValue==='1')
