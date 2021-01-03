@@ -1,4 +1,5 @@
 // pages/local/index.js
+const app = getApp()
 Page({
 
   /**
@@ -7,49 +8,47 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  //页面加载函数：获取用户名、编写的菜单（伪后端）
+  onLoad: function () {
+    var that = this
+    //调用应用实例的方法获取全局数据
+    wx.getStorage({
+      key: 'username',
+      success:function(res){
+        that.setData({
+          username:res.data//当前登录的用户名
+        });
+      }
+    })
+    if(app.globalData.menu)
+    {
+      this.setData({
+        hasMenu:true,//是否编写过菜单
+        menu:app.globalData.menu
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-  goLocal:function(){
+  goLocal: function () {//跳转到社区首页
     wx.navigateTo({
       url: '../local/index',
     })
   },
-  goMe:function(){
+  goMe: function () {//跳转到社区我的
     wx.navigateTo({
       url: '../local/me',
     })
   },
-  goDetail:function(){
+  goDetail: function (e) {//带参跳转到菜单详情页，参数为菜谱名
     wx.reLaunch({
-      url: '../local/detail',
+      url: '../local/detail?name=' + e.currentTarget.dataset.name,
     })
   },
-  toWrite:function()
-  {
+  toWrite: function () {//跳转到菜单编辑页
     wx.reLaunch({
       url: '../local/write_menu',
     })
   },
-  goCollect:  function(){
+  goCollect: function () {//跳转到社区收藏
     wx.reLaunch({
       url: '../local/collect',
     })
