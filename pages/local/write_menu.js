@@ -19,37 +19,37 @@ Page({
   onLoad: function (options) {
 
   },
-  getName: function (e) {
+  getName: function (e) {//获取菜谱名
     this.setData({
       menu_name: e.detail.value
     })
   },
-  goBack:function(){
+  goBack:function(){//返回到社区首页
     wx.reLaunch({
       url: '../local/index',
     })
   },
-  getTime: function (e) {
+  getTime: function (e) {//获取菜谱制作时间
     this.setData({
       menu_time: e.detail.value
     })
   },
-  getRegion: function (e) {
+  getRegion: function (e) {//获取菜谱原材料
     this.setData({
       menu_region: e.detail.value
     })
   },
-  getPrivilege: function (e) {
+  getPrivilege: function (e) {//获取食谱好处
     this.setData({
       menu_privilege: e.detail.value
     })
   },
-  getStep: function (e) {
+  getStep: function (e) {//获取制作步骤
     this.setData({
       menu_step: e.detail.value
     })
   },
-  submit_menu: function () {
+  submit_menu: function () {//提交菜单
     let menu={
       name:this.data.menu_name,
       time:this.data.menu_time,
@@ -57,12 +57,12 @@ Page({
       privilege:this.data.menu_privilege,
       step:this.data.menu_step
     }
-    app.globalData.menu=menu;
+    app.globalData.menu=menu;//伪后端：提交菜谱数据到全局函数
     console.log(app.globalData.menu)
-    wx.showToast({
+    wx.showToast({//提示
       title: '发布成功！',
     })
-    setTimeout(() => {
+    setTimeout(() => {//退到社区首页
       wx.reLaunch({
         url: '../local/index',
       })

@@ -9,6 +9,7 @@ Page({
   data: {
     name:''
   },
+  //页面加载函数：获取用户名、编写的菜单（伪后端）
 onLoad:function(options)
 {
   var that = this
@@ -32,12 +33,12 @@ onLoad:function(options)
     })
   }
 },
-  goBack:function(){
+  goBack:function(){//回转到社区首页
     wx.reLaunch({
       url: '../local/index',
     })
   },
-  collectIt:function(e)
+  collectIt:function(e)//收藏菜谱功能
   {
     if(app.globalData.collect_name.includes(this.data.name))
     {

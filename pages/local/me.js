@@ -12,6 +12,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  //页面加载函数：获取用户名、编写的菜单（伪后端）
   onLoad: function (options) {
     if(app.globalData.menu)
     {
@@ -22,22 +23,22 @@ Page({
     }
   },
 
-  goLocal: function () {
+  goLocal: function () {//跳转到社区首页
     wx.reLaunch({
       url: '../local/index'
     })
   },
-  goMe: function () {
+  goMe: function () {//跳转到社区我的
     wx.reLaunch({
       url: '../local/me',
     })
   },
-  goCollect: function () {
+  goCollect: function () {//跳转到社区收藏
     wx.reLaunch({
       url: '../local/collect',
     })
   },
-  goDetail: function (e) {
+  goDetail: function (e) {//带参跳转到菜单详情页，参数为菜谱名
     wx.reLaunch({
       url: '../local/detail?name=' + e.currentTarget.dataset.name,
     })
