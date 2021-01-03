@@ -1,4 +1,5 @@
 // pages/local/collect.js
+const app=getApp()
 Page({
 
   /**
@@ -12,7 +13,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(app.globalData.collect_name.includes('salad'))
+    {
+      this.setData({
+        hasSalad:true
+      })
+    }
+    if(app.globalData.collect_name.includes('egg'))
+    {
+      this.setData({
+        hasEgg:true
+      })
+    }
+    if(app.globalData.collect_name.includes('tudo'))
+    {
+      this.setData({
+        hasTudo:true,
+        menu:app.globalData.menu
+      })
+    }
   },
 
   goLocal:function(){
@@ -28,6 +47,12 @@ Page({
   goCollect:  function(){
     wx.reLaunch({
       url: '../local/collect',
+    })
+  },
+  
+  goDetail: function (e) {
+    wx.reLaunch({
+      url: '../local/detail?name=' + e.currentTarget.dataset.name,
     })
   },
   /**

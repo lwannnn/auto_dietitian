@@ -1,4 +1,5 @@
 // pages/local/me.js
+const app=getApp()
 Page({
 
   /**
@@ -12,7 +13,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    if(app.globalData.menu)
+    {
+      this.setData({
+        hasMenu:true,
+        menu:app.globalData.menu
+      })
+    }
   },
 
   goLocal: function () {
@@ -28,6 +35,11 @@ Page({
   goCollect: function () {
     wx.reLaunch({
       url: '../local/collect',
+    })
+  },
+  goDetail: function (e) {
+    wx.reLaunch({
+      url: '../local/detail?name=' + e.currentTarget.dataset.name,
     })
   },
   /**

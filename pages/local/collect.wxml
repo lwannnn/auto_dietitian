@@ -4,7 +4,8 @@
   <view class="title_container"  bindtap="goMe">我的</view>
 </view>
 <view class="card_container">
-  <view class="card">
+ 
+    <view class="card">
     <image src="../../assets/green_tea.png" mode="widthFix" style="width:100%"></image>
     <view style="margin-left:10%;margin-right:10%">
       <text style="font-weight:bold;margin-left:5%">清新绿茶</text>
@@ -25,27 +26,42 @@
         <view style="float:right">⌚54min</view>
       </view>
     </view>
-  </view><view class="card">
-    <image src="../../assets/yellow_milk.png" mode="widthFix" style="width:100%"></image>
+  </view>
+ <view class="card" wx:if="{{hasSalad===true}}"bindtap="goDetail" data-name="salad">
+    <image src="../../assets/salad.png" mode="widthFix" style="width:100%"></image>
     <view style="margin-left:10%;margin-right:10%">
-      <text style="font-weight:bold;margin-left:5%">柠檬奶昔</text>
+      <text style="font-weight:bold;margin-left:5%">蔬菜沙拉</text>
       <view>★ ★ ★ ★ ☆</view>
       <view style="margin-top:10%;font-size:9px">
-        <view style="float:left">❤543</view>
-        <view style="float:right">⌚54min</view>
+        <view style="float:left">❤831</view>
+        <view style="float:right">⌚39min</view>
       </view>
     </view>
-  </view><view class="card">
-    <image src="../../assets/dofu.png" mode="widthFix" style="width:100%"></image>
+  </view>
+  <view class="card" wx:if="{{hasEgg===true}}"bindtap="goDetail" data-name="egg">
+    <image src="../../assets/egg.jpg" mode="widthFix" style="width:100%"></image>
     <view style="margin-left:10%;margin-right:10%">
-      <text style="font-weight:bold;margin-left:5%">豆腐卷</text>
+      <text style="font-weight:bold;margin-left:5%">虾仁蒸蛋</text>
       <view>★ ★ ★ ★ ☆</view>
       <view style="margin-top:10%;font-size:9px">
-        <view style="float:left">❤543</view>
-        <view style="float:right">⌚54min</view>
+        <view style="float:left">❤801/view>
+        <view style="float:right">⌚20min</view>
       </view>
     </view>
-  </view><view class="card">
+  </view>
+</view>
+<view class="card" wx:if="{{hasMenu}}"wx:if="{{hasTudo===true}}"bindtap="goDetail" data-name="tudo">
+    <image src="../../assets/tudo.jpg" mode="widthFix" style="width:100%"></image>
+    <view style="margin-left:10%;margin-right:10%">
+      <text style="font-weight:bold;margin-left:5%">{{menu.name}}</text>
+      <view>★ ★ ★ ★ ☆</view>
+      <view style="margin-top:10%;font-size:9px">
+        <view style="float:left">❤000</view>
+        <view style="float:right">⌚{{menu.time}}min</view>
+      </view>
+    </view>
+  </view>
+   <!--<view class="card">
     <image src="../../assets/lajiao.png" mode="widthFix" style="width:100%"></image>
     <view style="margin-left:10%;margin-right:10%">
       <text style="font-weight:bold;margin-left:5%">辣椒山</text>
@@ -65,5 +81,5 @@
         <view style="float:right">⌚54min</view>
       </view>
     </view>
-  </view>
+  </view>-->
 </view>

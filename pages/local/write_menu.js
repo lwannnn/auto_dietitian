@@ -1,4 +1,5 @@
 // pages/local/write_menu.js
+const app=getApp()
 Page({
 
   /**
@@ -49,6 +50,15 @@ Page({
     })
   },
   submit_menu: function () {
+    let menu={
+      name:this.data.menu_name,
+      time:this.data.menu_time,
+      region:this.data.menu_region,
+      privilege:this.data.menu_privilege,
+      step:this.data.menu_step
+    }
+    app.globalData.menu=menu;
+    console.log(app.globalData.menu)
     wx.showToast({
       title: '发布成功！',
     })

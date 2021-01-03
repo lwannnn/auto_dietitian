@@ -1,4 +1,5 @@
 // pages/local/index.js
+const app = getApp()
 Page({
 
   /**
@@ -7,49 +8,46 @@ Page({
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    var that = this
+    //调用应用实例的方法获取全局数据
+    wx.getStorage({
+      key: 'username',
+      success:function(res){
+        that.setData({
+          username:res.data
+        });
+      }
+    })
+    if(app.globalData.menu)
+    {
+      this.setData({
+        hasMenu:true,
+        menu:app.globalData.menu
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-  goLocal:function(){
+  goLocal: function () {
     wx.navigateTo({
       url: '../local/index',
     })
   },
-  goMe:function(){
+  goMe: function () {
     wx.navigateTo({
       url: '../local/me',
     })
   },
-  goDetail:function(){
+  goDetail: function (e) {
     wx.reLaunch({
-      url: '../local/detail',
+      url: '../local/detail?name=' + e.currentTarget.dataset.name,
     })
   },
-  toWrite:function()
-  {
+  toWrite: function () {
     wx.reLaunch({
       url: '../local/write_menu',
     })
   },
-  goCollect:  function(){
+  goCollect: function () {
     wx.reLaunch({
       url: '../local/collect',
     })

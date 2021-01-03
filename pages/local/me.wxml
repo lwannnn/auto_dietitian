@@ -45,7 +45,19 @@
         <view style="float:right">⌚54min</view>
       </view>
     </view>
-  </view><view class="card">
+ </view>
+ <view class="card" wx:if="{{hasMenu}}"bindtap="goDetail" data-name="tudo">
+    <image src="../../assets/tudo.jpg" mode="widthFix" style="width:100%"></image>
+    <view style="margin-left:10%;margin-right:10%">
+      <text style="font-weight:bold;margin-left:5%">{{menu.name}}</text>
+      <view>★ ★ ★ ★ ☆</view>
+      <view style="margin-top:10%;font-size:9px">
+        <view style="float:left">❤000</view>
+        <view style="float:right">⌚{{menu.time}}min</view>
+      </view>
+    </view>
+  </view>
+ <!--<view class="card">
     <image src="../../assets/lajiao.png" mode="widthFix" style="width:100%"></image>
     <view style="margin-left:10%;margin-right:10%">
       <text style="font-weight:bold;margin-left:5%">辣椒山</text>
@@ -65,5 +77,5 @@
         <view style="float:right">⌚54min</view>
       </view>
     </view>
-  </view>
+  </view>--> 
 </view>
