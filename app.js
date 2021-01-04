@@ -28,6 +28,6 @@ App({
   globalData: {
     userInfo:null,
     collect_name:[],
-    count:59
+    count:20
   }
 })
