@@ -23,9 +23,9 @@
   </view>
   </view>
   <view class="tixing">
-    <view class="task">[一小时后喝水]</view>
+    <view class="task">[提醒喝水]</view>
     <view class="person">提醒倒计时：</view>
-    <view class="count">0: 23: 20</view>
+    <view class="count">{{count}}</view>
   </view>
 </view >
 <view class="right">

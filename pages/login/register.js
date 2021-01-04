@@ -114,10 +114,15 @@ Page({
       that.setData({
         userInfo:res
       })
-      //console.log(res)
+      console.log(that.data.userInfo)
     })
   },
-
+  loginTap:function(e)
+  {
+    this.setData({
+      userInfo:e.detail.userInfo
+    })
+  },
   gotoDocumentPage: function (options) {
     wx.navigateTo({
       url: '/pages/login/document',//要跳转到的页面路径

@@ -7,6 +7,7 @@ App({
     wx.setStorageSync('logs', logs.slice(0,40))
   },
   getUserInfo:function(cb){
+    
     var that = this
     if(this.globalData.userInfo){
       typeof cb == "function" && cb(this.globalData.userInfo)
@@ -26,6 +27,7 @@ App({
   },
   globalData: {
     userInfo:null,
-    collect_name:[]
+    collect_name:[],
+    count:59
   }
 })

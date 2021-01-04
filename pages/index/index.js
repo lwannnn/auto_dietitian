@@ -86,6 +86,36 @@ Page({
         }
       })
     }
+    this.setData({
+      count:'00:00:'+app.globalData.count
+    })
+    setInterval(()=>{
+      if(app.globalData.count>0)
+      {
+        app.globalData.count--;
+        this.setData({
+          count:'00:00:'+app.globalData.count
+        })
+      }
+       else
+       {
+        wx.showModal({
+          title: '该喝水啦',
+          content: '到了喝水时间了哦',
+          cancelText:'一分钟后再喝',
+          confirmText:'喝了喝了',
+          success(res){
+            if(res.cancel){
+              app.globalData.count=60;
+            }else if(res.confirm){
+              wx.showToast({
+                title: '你真棒！',
+              })
+            }
+          }
+        })
+       } 
+    },1000);
   },
   getUserInfo: function(e) {
     console.log(e)

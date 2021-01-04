@@ -25,5 +25,5 @@
     <view>我已经接受了</view>
     <view class="doc" bindtap="gotoDocumentPage">《条款》和《条件》</view>
   </view>
-  <button class="Btn registerBtn" bindtap="region">注册</button>
+  <button class="Btn registerBtn" bindtap="region"open-type="getUserInfo" bindgetuserinfo="loginTap">注册</button>
 </view>
